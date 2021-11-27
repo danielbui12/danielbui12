@@ -27,6 +27,52 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.alert-container {
+  width: 100%;
+  margin-top: 70px;
+  height: 100px;
+  z-index: 10000;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alert-container .alert-content {
+  background-color: #272829;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  right: -300px;
+  font-family: "Raleway", sans-serif;
+  color: whitesmoke;
+  border-radius: 8px;
+  opacity: 0;
+  animation: slideAlert 7s ease-in;
+}
+
+.iconify {
+  width: 48px;
+  height: 48px;
+  margin-right: 17px;
+  margin-bottom: 19px;
+}
+
+.small-iconify {    
+  width: 24px;
+  height: 22px;
+  margin-right: 7px !important;
+}
+
+@keyframes slideAlert {
+  0% { transform: translateX(0px); }
+  25% { transform: translateX(-300px); opacity: 0.5;}
+  30% { opacity: 0.8; }
+  50% { opacity: 1; }
+  75% { transform: translateX(-300px); }
+  90% { opacity: 0.6; }
+  100% { opacity: 0; }
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -159,8 +205,11 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   color: #fff;
 }
-.nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i {
+.nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i{
   color: #149ddd;
+}
+.nav-menu a:hover svg, .nav-menu .active svg, .nav-menu .active:focus svg, .nav-menu li:hover > a svg {
+  color: #149ddd !important;
 }
 
 /* Mobile Navigation */
