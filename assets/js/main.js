@@ -7,6 +7,11 @@
 (function() {
   "use strict";
 
+  const alert = document.querySelector('.alert-container');
+  setTimeout(() => {
+    alert.remove();
+  }, 5000)
+
   /**
    * Easy selector helper function
    */
