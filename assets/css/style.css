@@ -1026,31 +1026,31 @@ section {
   animation-duration: 1200ms;
 }
 path#f1-l1 {
-  animation-name: typing-f 1-l1;
+  animation-name: typing-f1-l1;
 }
 path#f1-l2 {
-  animation-name: typing-f 1-l2;
+  animation-name: typing-f1-l2;
 }
 path#f1-l3 {
-  animation-name: typing-f 1-l3;
+  animation-name: typing-f1-l3;
 }
 path#f2-l4 {
-  animation-name: typing-f 2-l4;
+  animation-name: typing-f2-l4;
 }
 path#f2-l5 {
-  animation-name: typing-f 2-l5;
+  animation-name: typing-f2-l5;
 }
 path#f2-l6 {
-  animation-name: typing-f 2-l6;
+  animation-name: typing-f2-l6;
 }
 path#f3-l7 {
-  animation-name: typing-f 3-l7;
+  animation-name: typing-f3-l7;
 }
 path#f3-l8 {
-  animation-name: typing-f 3-l8;
+  animation-name: typing-f3-l8;
 }
 path#f3-l9 {
-  animation-name: typing-f 3-l9;
+  animation-name: typing-f3-l9;
 }
 @keyframes typing-f3-l9 {
   0% {
