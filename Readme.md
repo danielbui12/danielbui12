@@ -11,3 +11,6 @@
 
 - 📫 How to reach me **huytung139@gmail.com**
 
+
+<a href="https://app.daily.dev/augustusflynn"><img src="https://api.daily.dev/devcards/225bfadff5c54925b43f1cac3baaaf50.png?r=wxt" width="400" alt="Augustus Flynn's Dev Card"/></a>
+
