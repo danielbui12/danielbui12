@@ -11319,7 +11319,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   text-align: left;
-  border: 1px solid #dee2e6;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin-bottom: 30px;
   overflow: hidden;
   margin: 0 15px 30px;
@@ -11425,6 +11425,7 @@ pre .code {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 180px;
+  gap: 1.2rem;
 }
 
 .social-icons .social-link {
@@ -11718,4 +11719,25 @@ pre .code {
   background: #F85C70;
   display: block;
   margin-top: 10px;
+}
+
+.tag {
+  border-bottom: 2px dashed var(--white);
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 1.75rem;
+  height: 40px;
+  padding-bottom: 8px;
+  color: var(--white);
+  width: fit-content;
+}
+
+.tag svg {
+  transform: translate(0, 0) rotate(0) skew(0) skewY(0) scaleX(1.1) scaleY(1.1);
+}
+
+.tag:hover, .tag:hover svg {
+  border-bottom-color: var(--primary);
+  fill: var(--primary);
 }
