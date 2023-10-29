@@ -9,4 +9,4 @@
 
 - 🌱 2023 **To Infinity And Beyond**
 
-- 📫 How to reach me **huytung139@gmail.com**
+- 📫 [Visit my online resume](https://danielbui12.github.io/danielbui12)

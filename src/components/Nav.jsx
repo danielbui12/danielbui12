@@ -37,7 +37,7 @@ function Nav() {
           </ul>
           <ul className="navbar-nav brand">
             <a href="#home">
-              <img src="/assets/imgs/avatar.png" alt="Daniel" className="brand-img" />
+              <img src="assets/imgs/avatar.png" alt="Daniel" className="brand-img" />
               <li className="brand-txt">
                 <h5 className="brand-title text-light">Daniel</h5>
                 <div className="brand-subtitle">To Infinity And Beyond</div>
