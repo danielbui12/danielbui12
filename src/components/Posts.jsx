@@ -23,8 +23,14 @@ function Posts() {
 
   return (
     <>
-      <GoBackButton />
-      <span className="badge badge-primary mt-5 mb-3"><span className="h5">{tag}</span></span>
+      {
+        tag && (
+          <>
+            <GoBackButton />
+            <span className="badge badge-primary mt-5 mb-3"><span className="h5">{tag}</span></span>
+          </>
+        )
+      }
       {
         posts.map((_item) => {
           return (
