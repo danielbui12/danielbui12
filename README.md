@@ -10,3 +10,5 @@
 - 🌱 2023 **To Infinity And Beyond**
 
 - 📫 [Visit my online resume](https://danielbui12.github.io/danielbui12)
+
+- 📃 [Visit my blog page](https://danielbui12.github.io/danielbui12/blog)
