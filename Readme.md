@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, You can call me Flynn</h1>
+<h1 align="center">Hi 👋, You can call me Daniel</h1>
 <h3 align="center">A passionate developer from Vietnam</h3>
 
 - 🔭 2020 **Cross-platform Mobile Dev**
