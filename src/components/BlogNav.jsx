@@ -16,7 +16,7 @@ function BlogNav() {
             to="/"
             onClick={(event) => {
               event.preventDefault()
-              window.location.href = '/'
+              window.location.href = import.meta.env.BASE_URL
             }}
           >Resume</Link>
           <Link
