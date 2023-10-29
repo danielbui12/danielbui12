@@ -22,13 +22,17 @@ function Tags() {
     <>
       <div className="container">
         <BlogNav />
-        {
-          tags.map((_tag) => {
-            return (
-              <Tag name={_tag} key={_tag}/>
-            )
-          })
-        }
+        <div className="d-flex">
+          {
+            tags.map((_tag) => {
+              return (
+                <div key={_tag} className="mr-4">
+                  <Tag name={_tag} />
+                </div>
+              )
+            })
+          }
+        </div>
       </div>
       <Footer />
     </>
