@@ -1,3 +1,5 @@
+import SocialIcon from './SocialIcon'
+
 function About() {
   return (
     <div className="container-fluid bg-dark">
@@ -46,48 +48,7 @@ function About() {
               English
             </li>
           </ul>
-          <ul className="social-icons pt-3">
-            <li className="social-item">
-              <a
-                rel="noreferrer"
-                className="social-link"
-                href="https://twitter.com/danielbui_12"
-                target="_blank"
-              >
-                <i className="ti-twitter" aria-hidden="true" />
-              </a>
-            </li>
-            <li className="social-item">
-              <a
-                rel="noreferrer"
-                className="social-link"
-                href="https://t.me/danielbui12"
-                target="_blank"
-              >
-                <i className="ti-comments" aria-hidden="true" />
-              </a>
-            </li>
-            <li className="social-item">
-              <a
-                rel="noreferrer"
-                className="social-link"
-                href="https://www.linkedin.com/in/daniel-nan"
-                target="_blank"
-              >
-                <i className="ti-linkedin" aria-hidden="true" />
-              </a>
-            </li>
-            <li className="social-item">
-              <a
-                rel="noreferrer"
-                className="social-link"
-                href="https://github.com/danielbui12"
-                target="_blank"
-              >
-                <i className="ti-github" aria-hidden="true" />
-              </a>
-            </li>
-          </ul>
+          <SocialIcon />
         </div>
         <div className="col-lg-4 about-card">
           <h3 className="font-weight-light text-light">My Expertise</h3>
@@ -122,7 +83,7 @@ function About() {
               <i className="ti-medall-alt icon-lg" />
             </div>
             <div className="col-10 ml-auto mr-3">
-              <h6 className="text-light">enthusiastic Contest Competitor</h6>
+              <h6 className="text-light">Enthusiastic Contest Competitor</h6>
               <p className="subtitle text-white-50">
                 I am always full of energy and ready to participate in competitions
                 and hackathons to gain my knowledge about other aspects: marketing,

@@ -1,0 +1,68 @@
+:root {
+  --background-body: #292929;
+  --background-content: #1d1d1d;
+  --text-color: #e5e5e5;
+  --code-bg-color: rgba(86, 96, 127, 0.75);
+}
+
+body {
+  background: var(--background-body);
+  color: var(--text-color);
+}
+
+/* Global */
+svg {
+  width: 1.5rem;
+}
+
+button.icon {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#root>div.container {
+  min-height: calc(100vh - 52px);
+}
+
+/* Post */
+.article {
+  width: 100%;
+  margin: 4rem 0;
+}
+
+.post-wrapper {
+  width: 100%;
+}
+
+/* code */
+.code-area {
+  position: relative;
+}
+
+.code-area .copy-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 5;
+}
+
+p {
+  color: rgba(234, 237, 243, 1);
+}
+
+code {
+  background-color: var(--code-bg-color);
+  border-radius: .25rem;
+  padding: .25rem;
+  color: var(--text-color);
+  font-size: .875em;
+  font-weight: 600;
+}
+
+pre {
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: 1.5rem 0 !important;
+}
