@@ -1,17 +1,39 @@
 import moment from "moment"
-import { Link } from "react-router-dom"
+import { useEffect, useState } from "react"
+import { Link, useParams } from "react-router-dom"
+import { BASE_FILE_URL } from '../utils/constant'
 
 function Posts() {
-  const postTitle = 'consectetur-adipisicing-elit'
+  const [posts, setPosts] = useState([])
+  const { tag } = useParams()
+
+  useEffect(() => {
+    fetch(BASE_FILE_URL + 'main.json')
+      .then(response => response.text())
+      .then(response => {
+        let _posts = JSON.parse(response)
+        if (tag) {
+          _posts = _posts.filter(_post => _post.tag.includes(tag))
+        }
+        setPosts(_posts)
+      })
+      .catch(err => console.log(err))
+  }, [tag]);
 
   return (
     <div>
-      <div className="mb-5">
-        <Link to={postTitle} className="read-more">
-          <h6 className="title">Consectetur adipisicing elit</h6>
-        </Link>
-        <i className="pl-3">{moment().format('MMMM D, YYYY')}</i>
-      </div>
+      {
+        posts.map((_item) => {
+          return (
+            <div className="mb-5" key={_item.code}>
+              <Link to={_item.code} className="read-more">
+                <h6 className="title">{_item.title}</h6>
+              </Link>
+              <i className="pl-3">{moment(_item.timestamp).format('MMMM D, YYYY')}</i>
+            </div>
+          )
+        })
+      }
     </div>
   )
 }

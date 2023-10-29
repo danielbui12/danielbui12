@@ -8,7 +8,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Tag from './pages/tag'
+import Tags from './pages/tags'
 
 const router = createBrowserRouter([
   {
@@ -26,7 +26,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/tag",
-    element: <Tag />,
+    element: <Tags />,
+  },
+  {
+    path: "/tag/:tag",
+    element: <Blogs />,
   },
 ], 
   { basename: import.meta.env.BASE_URL }
