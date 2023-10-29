@@ -11,14 +11,11 @@ function BlogNav() {
         </h2>
 
         <div className='d-flex'>
-          <Link
+          <a
             className={`mr-3 h5 ${highlightNavStyle('resume')}`}
-            to="/"
-            onClick={(event) => {
-              event.preventDefault()
-              window.location.href = import.meta.env.BASE_URL
-            }}
-          >Resume</Link>
+            href="https://danielbui12.github.io/danielbui12"
+            target="_self"
+          >Resume</a>
           <Link
             className={`mr-3 h5 ${highlightNavStyle('blog')}`}
             to="/blog"
