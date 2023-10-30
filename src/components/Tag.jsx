@@ -2,11 +2,19 @@
 import { Link } from 'react-router-dom'
 import { HashTag } from './Icons'
 
-function Tag({ name }) {
+function Tag({ values = [] }) {
   return (
-    <Link to={name} className='tag'>
-      <HashTag />{name}
-    </Link>
+    <>
+      {
+        values.map((_tag) => {
+          return (
+            <Link key={`/tag/${_tag}`} to={`/tag/${_tag}`} className='tag'>
+              <HashTag />{_tag}
+            </Link>
+          )
+        })
+      }
+    </>
   )
 }
 

@@ -1,13 +1,19 @@
 import Markdown from "markdown-to-jsx"
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import CodeArea from "./CodeArea";
 import GoBackButton from "./GoBackButton";
 import { useParams } from "react-router-dom";
-import { BASE_FILE_URL } from "../utils/constant";
+import { BASE_FILE_URL, BASE_WEBSITE_URL } from "../utils/constant";
+import DocumentMeta from 'react-document-meta';
+import Tag from "./Tag";
+import { BlogContext } from "./BlogContext";
+import moment from "moment/moment";
 
 const Post = () => {
   const { code: postCode } = useParams();
   const [postContent, setPostContent] = useState("");
+  const blogContext = useContext(BlogContext)
+  const post = blogContext.blogs.find(_blog => _blog.code === postCode)
 
   useEffect(() => {
     if (postCode) {
@@ -18,30 +24,49 @@ const Post = () => {
     }
   }, [postCode]);
 
-  return (
-    <article className="article">
-      <div className="container">
-        <GoBackButton />
+  const meta = {
+    title: post?.title || "",
+    description: post?.description || "",
+    canonical: `${BASE_WEBSITE_URL}blog/${postCode}`,
+    meta: {
+      charset: 'utf-8',
+      name: {
+        keywords: (post?.tag || []).join(',')
+      }
+    }
+  };
 
-        <div className="post-wrapper">
-          <Markdown options={{
-            overrides: {
-              Code: {
-                component: CodeArea
-              },
-              img: {
-                component: ({ src, alt }) => <img src={src} alt={alt} style={{ maxWidth: '100%'}} />
-              },
-              Image: {
-                component: ({ src, alt }) => <img src={src} alt={alt} style={{ maxWidth: '100%' }} />
-              },
-            }
-          }}>
-            {postContent}
-          </Markdown>
+  return (
+    <DocumentMeta  {...meta}>
+      <article className="article">
+        <div className="container">
+          <GoBackButton />
+          <h2 className="text-primary">{post?.title || ""}</h2>
+          <i className="pl-3">{moment(post?.timestamp || new Date()).format('MMMM D, YYYY')}</i>
+          <div className="post-wrapper mt-4">
+            <Markdown options={{
+              overrides: {
+                Code: {
+                  component: CodeArea
+                },
+                img: {
+                  component: ({ src, alt }) => <img src={src} alt={alt} style={{ maxWidth: '100%'}} />
+                },
+                Image: {
+                  component: ({ src, alt }) => <img src={src} alt={alt} style={{ maxWidth: '100%' }} />
+                }
+              }
+            }}>
+              {postContent}
+            </Markdown>
+          </div>
+
+          <div className="container d-flex flex-wrap gap-4">
+            <Tag values={meta.meta.name.keywords.split(',')} /> 
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </DocumentMeta>
   )
 }
 

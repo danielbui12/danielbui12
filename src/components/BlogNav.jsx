@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { BASE_WEBSITE_URL } from "../utils/constant"
 
 function BlogNav() {
   const highlightNavStyle = (path) => window.location.href.includes(path) ? 'text-danger' : 'text-light'
@@ -35,27 +36,27 @@ function BlogNav() {
           <ul className="navbar-nav">
             <li className="nav-item">
               <a
-                className={`nav-link mr-3 h6 ${highlightNavStyle('resume')}`}
-                href="https://danielbui12.github.io/danielbui12"
+                className={`nav-link h6 ${highlightNavStyle('resume')}`}
+                href={BASE_WEBSITE_URL}
                 target="_self"
               >Resume</a>
             </li>
             <li className="nav-item">
               <Link
-                className={`nav-link mr-3 h6 ${highlightNavStyle('blog')}`}
+                className={`nav-link h6 ${highlightNavStyle('blog')}`}
                 to="/blog"
               >Blog</Link>
             </li>
             <li className="nav-item">
               <Link
-                className={`nav-link mr-3 h6 ${highlightNavStyle('tag')}`}
+                className={`nav-link h6 ${highlightNavStyle('tag')}`}
                 to="/tag"
               >Tag</Link>
             </li>
           </ul>
         </div>
       </div>
-      <span className="line my-4 w-100"></span>
+      <span className="line mb-4 mt-1 w-100"></span>
     </nav>
   )
 }

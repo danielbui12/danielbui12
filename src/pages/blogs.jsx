@@ -1,21 +1,18 @@
-import { useLayoutEffect } from 'react'
 import Footer from '../components/Footer'
 import "../assets/style/blog.css"
 import Posts from '../components/Posts'
 import BlogNav from '../components/BlogNav'
+import BlogContextProvider from '../components/BlogContext'
 
 function Blogs() {
-
-  useLayoutEffect(() => {
-    document.title = 'Blog | Daniel'
-  }, [])
-
   return (
-    <>
-      <BlogNav />
-      <Posts />
+    <BlogContextProvider>
+      <div className='container'>
+        <BlogNav />
+        <Posts />
+      </div>
       <Footer />
-    </>
+    </BlogContextProvider>
   )
 }
 
