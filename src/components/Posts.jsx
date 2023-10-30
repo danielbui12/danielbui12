@@ -22,7 +22,7 @@ function Posts() {
   }, [tag]);
 
   return (
-    <>
+    <div className="container">
       {
         tag && (
           <>
@@ -43,7 +43,7 @@ function Posts() {
           )
         })
       }
-    </>
+    </div>
   )
 }
 

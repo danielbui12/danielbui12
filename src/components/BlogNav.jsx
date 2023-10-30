@@ -10,7 +10,7 @@ function BlogNav() {
       data-spy="affix"
       data-offset-top={100}
     >
-      <div className='mt-5 container'>
+      <div className='mt-3 container'>
         <div style={{ flexGrow: 100 }}>
           <h2>
             Latest <span className="text-danger">News</span>
@@ -55,7 +55,7 @@ function BlogNav() {
           </ul>
         </div>
       </div>
-      <span className="line mt-4 mb-5 w-100"></span>
+      <span className="line my-4 w-100"></span>
     </nav>
   )
 }

@@ -12,10 +12,8 @@ function Blogs() {
 
   return (
     <>
-      <div className="container">
-        <BlogNav />
-        <Posts />
-      </div>
+      <BlogNav />
+      <Posts />
       <Footer />
     </>
   )
