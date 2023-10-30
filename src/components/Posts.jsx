@@ -27,7 +27,7 @@ function Posts() {
         tag && (
           <>
             <GoBackButton />
-            <span className="badge badge-primary mt-5 mb-3"><span className="h5">{tag}</span></span>
+            <span className="badge badge-primary mt-4 mb-3"><span className="h5">{tag}</span></span>
           </>
         )
       }

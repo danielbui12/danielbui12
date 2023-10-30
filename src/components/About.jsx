@@ -14,8 +14,7 @@ function About() {
             Blockchain developer with more than 2 years of working experience in
             Ethereum-based blockchain and Solana blockchain combined with 3 years in
             software development. My ambition is to offer customers high-quality
-            software with the most convenient and perfect UI/UX as well as
-            performance.
+            software with the most convenient and good quality.
           </p>
           <button className="btn btn-outline-danger">
             <i className="icon-down-circled2 " />

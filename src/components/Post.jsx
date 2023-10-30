@@ -28,7 +28,13 @@ const Post = () => {
             overrides: {
               Code: {
                 component: CodeArea
-              }
+              },
+              img: {
+                component: ({ src, alt }) => <img src={src} alt={alt} style={{ maxWidth: '100%'}} />
+              },
+              Image: {
+                component: ({ src, alt }) => <img src={src} alt={alt} style={{ maxWidth: '100%' }} />
+              },
             }
           }}>
             {postContent}

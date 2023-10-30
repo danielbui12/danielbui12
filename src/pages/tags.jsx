@@ -22,11 +22,11 @@ function Tags() {
     <>
       <div className="container">
         <BlogNav />
-        <div className="d-flex">
+        <div className="container d-flex flex-wrap gap-4">
           {
             tags.map((_tag) => {
               return (
-                <div key={_tag} className="mr-4">
+                <div key={_tag}>
                   <Tag name={_tag} />
                 </div>
               )
