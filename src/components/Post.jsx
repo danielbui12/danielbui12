@@ -1,12 +1,15 @@
-import Markdown from "markdown-to-jsx"
 import { useContext, useEffect, useState } from "react"
+import { useParams } from "react-router-dom";
+
+import Markdown from "markdown-to-jsx"
 import CodeArea from "./CodeArea";
 import GoBackButton from "./GoBackButton";
-import { useParams } from "react-router-dom";
-import { BASE_FILE_URL, BASE_WEBSITE_URL } from "../utils/constant";
 import DocumentMeta from 'react-document-meta';
 import Tag from "./Tag";
+import Alert from './Alert';
+
 import { BlogContext } from "./BlogContext";
+import { BASE_FILE_URL, BASE_WEBSITE_URL } from "../utils/constant";
 import moment from "moment/moment";
 
 const Post = () => {
@@ -54,6 +57,9 @@ const Post = () => {
                 },
                 Image: {
                   component: ({ src, alt }) => <img src={src} alt={alt} style={{ maxWidth: '100%' }} />
+                },
+                Alert: {
+                  component: Alert
                 }
               }
             }}>
