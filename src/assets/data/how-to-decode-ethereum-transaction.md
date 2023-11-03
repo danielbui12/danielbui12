@@ -1,7 +1,7 @@
 #### Table of Contents
 
 1. <a href="#1-what-is-Ethereum-transaction-log-data">What is Ethereum transaction log data?</a>
-2. <a href="#2-how-to-decode-it-using-ethers-libraries">How to decode it using ethers libraries?</a>
+2. <a href="#2-how-to-decode-it-using-ethers-library">How to decode it using ethers library?</a>
 3. <a href="#3-conclusion">Conclusion</a>
 
 <Alert type="primary">

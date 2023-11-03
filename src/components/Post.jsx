@@ -1,4 +1,4 @@
-import { useContext, useEffect, useLayoutEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 
 import Markdown from "markdown-to-jsx"
@@ -27,16 +27,22 @@ const Post = () => {
     }
   }, [postCode]);
 
-  useLayoutEffect(() => {
-    const el = document.getElementById(window.location.hash.replace('#', ''))
-    if (el) {
-      window.scrollTo({
-        top: el.offsetTop,
-        left: 0,
-        behavior: "smooth",
+  useEffect(() => {
+    if (postContent) {
+      $(".article ol a").on('click', function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          const hash = this.hash.toLowerCase();
+          console.log(hash, $(hash));
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 700, function () {
+            window.location.hash = hash;
+          });
+        }
       });
     }
-  }, [])
+  }, [postContent])
 
   const meta = {
     title: post?.title || "",
