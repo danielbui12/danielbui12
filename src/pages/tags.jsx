@@ -29,8 +29,7 @@ function Tags() {
 
   return (
     <>
-
-      <div className="container">
+      <div className="container blog-container">
         <BlogNav />
         <div className="container d-flex flex-wrap gap-4">
           <DocumentMeta {...meta}>

@@ -11,7 +11,7 @@ body {
 }
 
 .blog-container {
-  min-height: calc(100vh - 52px) !important;
+  min-height: calc(100vh - 135px) !important;
 }
 
 /* Post */
@@ -30,6 +30,10 @@ body {
 
 .article svg {
   width: 1.5rem;
+}
+
+.tag svg {
+  transform: translate(0, 0) rotate(0) skew(0) skewY(0) scaleX(1.2) scaleY(1.2) !important;
 }
 
 .article h2 {
