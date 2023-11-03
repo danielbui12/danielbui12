@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react"
+import { useContext, useEffect, useLayoutEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 
 import Markdown from "markdown-to-jsx"
@@ -27,6 +27,17 @@ const Post = () => {
     }
   }, [postCode]);
 
+  useLayoutEffect(() => {
+    const el = document.getElementById(window.location.hash.replace('#', ''))
+    if (el) {
+      window.scrollTo({
+        top: el.offsetTop,
+        left: 0,
+        behavior: "smooth",
+      });
+    }
+  }, [])
+
   const meta = {
     title: post?.title || "",
     description: post?.description || "",
@@ -45,7 +56,7 @@ const Post = () => {
       <h2 className="text-primary">{post?.title || ""}</h2>
       <i className="pl-3">{moment(post?.timestamp || new Date()).format('MMMM D, YYYY')}</i>
       <article className="article mt-5">
-        <div className="container">
+        <div className="container blog-container">
           <div className="post-wrapper mt-4">
             <Markdown options={{
               overrides: {

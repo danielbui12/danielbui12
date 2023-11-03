@@ -24,7 +24,7 @@ function Posts() {
 
   return (
     <DocumentMeta {...meta}>
-      <div className="container">
+      <div className="container blog-container">
         {
           tag && (
             <>

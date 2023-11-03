@@ -1844,7 +1844,7 @@ pre code {
 }
 
 .wrap-table {
-  overflow: scroll;
+  overflow: auto;
 }
 
 .table {

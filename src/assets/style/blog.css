@@ -10,6 +10,10 @@ body {
   color: var(--text-color);
 }
 
+.blog-container {
+  min-height: calc(100vh - 52px) !important;
+}
+
 /* Post */
 .article {
   width: 100%;
@@ -22,10 +26,6 @@ body {
 
 .article .tag svg {
   transform: translate(0, 0) rotate(0) skew(0) skewY(0) scaleX(0.8) scaleY(0.8) !important;
-}
-
-.article .container {
-  min-height: calc(100vh - 52px);
 }
 
 .article svg {
