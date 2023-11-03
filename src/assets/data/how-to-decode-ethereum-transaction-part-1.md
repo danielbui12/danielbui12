@@ -31,10 +31,10 @@ For example, a Transfer event may have three topics: the hash of the event name 
 In this part, I'm going to show you 2 common way to decode the Ethereum transaction log data.
 
 <Alert type="warning">
-Reminder: You must have the ABI of the contract that you've made a transaction on it. However, watch till the end, the a particular bonus for you!
+Reminder: You must have the ABI of the contract that you've made a transaction on it.
 </Alert>
 
-#### 2.1 Using `ethers.utils.Interface`
+#### Using `ethers.utils.Interface` to decode in 17 lines of code
 
 - First, let declare the ABI of the contract, which I've mentioned before, and put it into the `Interface`
 
@@ -135,6 +135,6 @@ LogDescription {
 
 ## 3. Conclusion
 
-In this blog, I’ve walked you through the process of decoding Ethereum transaction log data using the ethers library1. I’ve shared two effective methods to parse this data: one using the ethers.utils.Interface class and the other using the ethers.utils.defaultAbiCoder function. I’ve also provided some practical examples of code and their corresponding outputs for each method. Decoding Ethereum transaction log data is a powerful tool for gaining insights into blockchain activities and interacting with smart contracts. I hope you found this guide helpful and informative. Happy coding!
+In this first section of blog "How to decode Ethereum transaction, I’ve walked you through the process of decoding Ethereum transaction log data using the ethers library with `Interface`. I’ve also provided some practical examples of code and their corresponding outputs for each method. Decoding Ethereum transaction log data is a powerful tool for gaining insights into blockchain activities and interacting with smart contracts. I hope you found this guide helpful and informative. Happy coding!
 
-Don't forget to follow for more!
+Don't forget to follow for more useful content 🎁!

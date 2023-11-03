@@ -1,11 +1,12 @@
 [
   {
-    "code": "how-to-decode-ethereum-transaction",
-    "title": "How to decode Ethereum transaction?",
+    "code": "how-to-decode-ethereum-transaction-part-1",
+    "title": "How to decode Ethereum transaction #1",
     "description": "By the end of this post, you'll know how to decode an Ethereum transaction in many ways.",
     "content": "how-to-decode-ethereum-transaction.md",
     "timestamp": 1698570609359,
     "tag": [
+      "decode",
       "blockchain",
       "ethereum",
       "transaction"
