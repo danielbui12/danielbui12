@@ -41,11 +41,11 @@ const Post = () => {
 
   return (
     <DocumentMeta  {...meta}>
-      <article className="article">
+      <GoBackButton />
+      <h2 className="text-primary">{post?.title || ""}</h2>
+      <i className="pl-3">{moment(post?.timestamp || new Date()).format('MMMM D, YYYY')}</i>
+      <article className="article mt-5">
         <div className="container">
-          <GoBackButton />
-          <h2 className="text-primary">{post?.title || ""}</h2>
-          <i className="pl-3">{moment(post?.timestamp || new Date()).format('MMMM D, YYYY')}</i>
           <div className="post-wrapper mt-4">
             <Markdown options={{
               overrides: {
@@ -53,7 +53,7 @@ const Post = () => {
                   component: CodeArea
                 },
                 img: {
-                  component: ({ src, alt }) => <img src={src} alt={alt} style={{ maxWidth: '100%'}} />
+                  component: ({ src, alt }) => <img src={src} alt={alt} style={{ maxWidth: '100%' }} />
                 },
                 Image: {
                   component: ({ src, alt }) => <img src={src} alt={alt} style={{ maxWidth: '100%' }} />
@@ -68,7 +68,7 @@ const Post = () => {
           </div>
 
           <div className="container d-flex flex-wrap gap-4">
-            <Tag values={meta.meta.name.keywords.split(',')} /> 
+            <Tag values={meta.meta.name.keywords.split(',')} />
           </div>
         </div>
       </article>

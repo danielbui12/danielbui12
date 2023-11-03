@@ -10,26 +10,11 @@ body {
   color: var(--text-color);
 }
 
-/* Global */
-svg {
-  width: 1.5rem;
-}
-
-button.icon {
-  background: none;
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
-
-#root>div.container {
-  min-height: calc(100vh - 52px);
-}
-
 /* Post */
 .article {
   width: 100%;
 }
+
 .article .tag {
   font-size: 1rem;
   padding-bottom: 0;
@@ -39,27 +24,53 @@ button.icon {
   transform: translate(0, 0) rotate(0) skew(0) skewY(0) scaleX(0.8) scaleY(0.8) !important;
 }
 
-.post-wrapper {
+.article .container {
+  min-height: calc(100vh - 52px);
+}
+
+.article svg {
+  width: 1.5rem;
+}
+
+.article h2 {
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--primary);
+}
+
+.article button.icon {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.article .post-wrapper {
   width: 100%;
 }
 
 /* code */
-.code-area {
+.article .code-area {
   position: relative;
 }
 
-.code-area .copy-icon {
+.article .code-area pre {
+  max-height: 350px;
+}
+
+.article .code-area .copy-icon {
   position: absolute;
   top: 1rem;
   right: 1rem;
   z-index: 5;
 }
 
-p {
+.article p {
   color: rgba(234, 237, 243, 1);
+  font-size: 1rem;
 }
 
-code {
+.article code {
   background-color: var(--code-bg-color);
   border-radius: .25rem;
   padding: .25rem;
@@ -68,7 +79,7 @@ code {
   font-weight: 600;
 }
 
-pre {
+.article pre {
   border: none;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   margin: 1.5rem 0 !important;
