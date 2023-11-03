@@ -1843,6 +1843,10 @@ pre code {
   }
 }
 
+.wrap-table {
+  overflow: scroll;
+}
+
 .table {
   width: 100%;
   margin-bottom: 1rem;
@@ -11760,4 +11764,8 @@ pre .code {
 
 .gap-5 {
   gap: 3rem !important;
+}
+
+.border-bottom-none {
+  border-bottom-style: hidden !important;
 }

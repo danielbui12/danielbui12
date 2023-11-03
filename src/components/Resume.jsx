@@ -1,3 +1,5 @@
+import { EXPERIENCED_CONTRACT, NETWORK_BASE_URI } from "../utils/constant"
+
 function Resume() {
   return (
     <section className="section bg-dark break" id="resume">
@@ -30,7 +32,7 @@ function Resume() {
                   </li>
                   <li>
                     Form a team to compete in external hackathons about blockchain
-                    and won several awards.
+                    and won several awards: In top 10 at Road to Grizzlython hackathon of Web3 Space, Top 2 at Hackathon 08 of Solana SuperTeam Vietnam.
                   </li>
                 </ul>
               </div>
@@ -46,13 +48,10 @@ function Resume() {
                     communicating with members in the team.
                   </li>
                   <li>
-                    Training and support in order to build a efficient team in
-                    work.
+                    Developing & Operating system which got over 10,000 users every month.
                   </li>
                   <li>
-                    Team leadership: Summarizing problems and raising during the
-                    implementation of the project and making suggestions for
-                    improvement.
+                    Team leadership: Training and support in order to build a efficient team in work.
                   </li>
                 </ul>
               </div>
@@ -73,12 +72,70 @@ function Resume() {
                   <li>
                     Graduated <b>1 year</b> earlier with very good bachelor&apos;s degree
                   </li>
-                  <li>Actively participate in activities</li>
+                  <li>Actively participate in activities.</li>
+                  <li><b>3 times continuously</b>winning 1st at Tool For Ideas.</li>
                 </ul>
                 <hr />
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="card bg-dark pb-3">
+          <div className="card-header">
+            <h4 className="mt-3 mb-2 text-light">
+              <div className="mt-2">
+                <h4 className="text-light">Highlighted smart contracts I developed</h4>
+                <span className="line" />
+              </div>
+            </h4>
+          </div>
+          <div className="card-body">
+            <div className="wrap-table">
+              <table class="table table-bordered table-dark" style={{ minWidth: "1000px", maxHeight: "1200px" }}>
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Project</th>
+                    <th scope="col">Contract</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {
+                    Object.keys(EXPERIENCED_CONTRACT).map((_project, index) => {
+                      return EXPERIENCED_CONTRACT[_project].map((_contract, _index) => {
+                        const contractCount = EXPERIENCED_CONTRACT[_project].length;
+                        const classHiddenBorder = _index !== contractCount - 1 && contractCount > 0 ? "border-bottom-none" : ""
+                        return (
+                          <tr>
+                            <th scope="row" className={classHiddenBorder}>
+                              {_index === Math.floor((contractCount - 1) / 2) ? index + 1 : ''}
+                            </th>
+                            <td className={classHiddenBorder}>
+                              {_index === Math.floor((contractCount - 1) / 2) ? _contract.contractName : ""}
+                            </td>
+                            <td>
+                              <a href={`${NETWORK_BASE_URI[_contract.network]}/address/${_contract.address}`} target="_blank">
+                                {_contract.contractName}
+                              </a>
+                            </td>
+                            <td>{_contract.description}</td>
+                            <td>
+                              <span class={`badge badge-${_contract.type === "Mainnet" ? "primary" : "secondary"}`}>{_contract.type}</span>
+                            </td>
+                          </tr>
+                        )
+                      })
+                    })
+                  }
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="pl-5"><i>For more, please direct to my Github repository.</i></div>
         </div>
       </div>
     </section>
