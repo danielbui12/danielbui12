@@ -7,7 +7,7 @@ import BlogContextProvider from '../components/BlogContext'
 function Blogs() {
   return (
     <BlogContextProvider>
-      <div className='container'>
+      <div className='container blog-container'>
         <BlogNav />
         <Posts />
       </div>

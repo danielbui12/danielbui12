@@ -92,7 +92,7 @@ function Resume() {
           </div>
           <div className="card-body">
             <div className="wrap-table">
-              <table class="table table-bordered table-dark" style={{ minWidth: "1000px", maxHeight: "1200px" }}>
+              <table className="table table-bordered table-dark" style={{ minWidth: "1000px", maxHeight: "1200px" }}>
                 <thead>
                   <tr>
                     <th scope="col">#</th>
@@ -109,21 +109,21 @@ function Resume() {
                         const contractCount = EXPERIENCED_CONTRACT[_project].length;
                         const classHiddenBorder = _index !== contractCount - 1 && contractCount > 0 ? "border-bottom-none" : ""
                         return (
-                          <tr>
+                          <tr key={_project + _contract + _index}>
                             <th scope="row" className={classHiddenBorder}>
                               {_index === Math.floor((contractCount - 1) / 2) ? index + 1 : ''}
                             </th>
-                            <td className={classHiddenBorder}>
-                              {_index === Math.floor((contractCount - 1) / 2) ? _contract.contractName : ""}
+                            <td className={classHiddenBorder} style={{ minWidth: '120px'}}>
+                              {_index === Math.floor((contractCount - 1) / 2) ? _project : ""}
                             </td>
                             <td>
-                              <a href={`${NETWORK_BASE_URI[_contract.network]}/address/${_contract.address}`} target="_blank">
+                              <a rel="noreferrer" href={`${NETWORK_BASE_URI[_contract.network]}/address/${_contract.address}`} target="_blank">
                                 {_contract.contractName}
                               </a>
                             </td>
                             <td>{_contract.description}</td>
                             <td>
-                              <span class={`badge badge-${_contract.type === "Mainnet" ? "primary" : "secondary"}`}>{_contract.type}</span>
+                              <span className={`badge badge-${_contract.type === "Mainnet" ? "primary" : "secondary"}`}>{_contract.type}</span>
                             </td>
                           </tr>
                         )

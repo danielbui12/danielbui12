@@ -7,7 +7,7 @@ import Post from "../components/Post"
 function Blog() {
   return (
     <BlogContextProvider>
-      <div className="container">
+      <div className="container blog-container">
         <BlogNav />
         <Post />
       </div>

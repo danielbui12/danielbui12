@@ -17,14 +17,14 @@ function Posts() {
     meta: {
       charset: 'utf-8',
       name: {
-        keywords: ['blockchain', 'blog', tag, 'danielbui12'].join(',')
+        keywords: ['blog', tag].join(',')
       }
     }
   };
 
   return (
     <DocumentMeta {...meta}>
-      <div className="container blog-container">
+      <div className="container">
         {
           tag && (
             <>
