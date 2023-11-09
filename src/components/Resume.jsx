@@ -37,7 +37,7 @@ function Resume() {
                 </ul>
               </div>
               <div className="card-body">
-                <h6 className="title text-danger">2021 - 2023</h6>
+                <h6 className="title text-danger">2020 - 2023</h6>
                 <p className="text-light">Software Engineer at TORITI LTD</p>
                 <ul className="mt40 info">
                   <li>
@@ -117,7 +117,15 @@ function Resume() {
                               {_index === Math.floor((contractCount - 1) / 2) ? _project : ""}
                             </td>
                             <td>
-                              <a rel="noreferrer" href={`${NETWORK_BASE_URI[_contract.network]}/address/${_contract.address}`} target="_blank">
+                              <a 
+                                rel="noreferrer" 
+                                href={
+                                  _contract.repo ? 
+                                    _contract.repo : 
+                                    `${NETWORK_BASE_URI[_contract.network]}/address/${_contract.address}`
+                                } 
+                                target="_blank"
+                              >
                                 {_contract.contractName}
                               </a>
                             </td>

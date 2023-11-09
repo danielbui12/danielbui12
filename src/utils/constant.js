@@ -49,10 +49,18 @@ export const EXPERIENCED_CONTRACT = {
   "MetaX": [
     {
       contractName: "MetaXPayment",
-      description: "MetaXPayment handles buy NFT from Opensea through Seaport.",
+      description: "MetaXPayment handles buy NFT from Opensea through Seaport smart contract.",
       type: "Mainnet",
       network: NETWORKS[1],
       address: "0x90135839c7f8161DD13638Cc2aE4DDf01b3454fB"
+    }
+  ],
+  "DAO ecosystem": [
+    {
+      contractName: "DAO ecosystem",
+      type: "Testnet",
+      repo: "https://github.com/danielbui12/DAO_ecosystem_smart_contract",
+      description: "DAO ecosystem includes many features: Token/NFT Lottery, NFT Mining, Marketplace, NFT Swapping, NFT Auction, Private/Public sale, Staking, ..."
     }
   ]
 }
