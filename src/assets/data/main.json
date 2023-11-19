@@ -1,18 +1,5 @@
 [
   {
-    "code": "how-to-decode-ethereum-transaction-part-1",
-    "title": "How to decode Ethereum transaction #1",
-    "description": "By the end of this post, you'll know how to decode an Ethereum transaction in many ways.",
-    "content": "how-to-decode-ethereum-transaction.md",
-    "timestamp": 1698570609359,
-    "tag": [
-      "decode",
-      "blockchain",
-      "ethereum",
-      "transaction"
-    ]
-  },
-  {
     "code": "merkle-tree-in-blockchain",
     "title": "Merkle Tree in blockchain",
     "description": "The use of Merkle trees can significantly reduce the amount of data that a trusted agency needs to maintain for verification purposes. It separates the verification of data from the data itself. The Merkle tree can be stored locally or on a distributed system.",
@@ -24,6 +11,19 @@
       "hash-functions",
       "data-verification",
       "gas-saving"
+    ]
+  },
+  {
+    "code": "how-to-decode-ethereum-transaction-part-1",
+    "title": "How to decode Ethereum transaction #1",
+    "description": "By the end of this post, you'll know how to decode an Ethereum transaction in many ways.",
+    "content": "how-to-decode-ethereum-transaction.md",
+    "timestamp": 1698570609359,
+    "tag": [
+      "decode",
+      "blockchain",
+      "ethereum",
+      "transaction"
     ]
   }
 ]

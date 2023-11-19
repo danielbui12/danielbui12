@@ -94,42 +94,43 @@ We are going to take a look on how to use these special Ethereum root hashes in 
 ### 1. Efficient Airdropping
 
 One common use case for Merkle trees are airdrops, since Merkle proofs allow us to very efficiently implement **ERC20 token airdrops**. The implementation is rather simple using above mentioned Openzeppelin MerkleProof library. 
+
 <Code language="javascript">
-    contract MerkleDistributor {
-        address public immutable token;
-        bytes32 public immutable merkleRoot;
-    
-        mapping(address => bool) public isClaimed;
-    
-        constructor(address token_, bytes32 merkleRoot_) {
-            token = token_;
-            merkleRoot = merkleRoot_;
-        }
-    
-        function claim(
-            address account,
-            uint256 amount,
-            bytes32[] calldata merkleProof
-        ) external {
-            require(!isClaimed[account], 'Already claimed.');
-    
-            bytes32 node = keccak256(
-                abi.encodePacked(account, amount)
-            );
-            bool isValidProof = MerkleProof.verifyCalldata(
-                merkleProof,
-                merkleRoot,
-                node
-            );
-            require(isValidProof, 'Invalid proof.');
-    
-            isClaimed[account] = true;
-            require(
-                IERC20(token).transfer(account, amount),
-                'Transfer failed.'
-            );
-        }
-    }
+  contract MerkleDistributor {
+      address public immutable token;
+      bytes32 public immutable merkleRoot;
+  
+      mapping(address => bool) public isClaimed;
+  
+      constructor(address token_, bytes32 merkleRoot_) {
+          token = token_;
+          merkleRoot = merkleRoot_;
+      }
+  
+      function claim(
+          address account,
+          uint256 amount,
+          bytes32[] calldata merkleProof
+      ) external {
+          require(!isClaimed[account], 'Already claimed.');
+  
+          bytes32 node = keccak256(
+              abi.encodePacked(account, amount)
+          );
+          bool isValidProof = MerkleProof.verifyCalldata(
+              merkleProof,
+              merkleRoot,
+              node
+          );
+          require(isValidProof, 'Invalid proof.');
+  
+          isClaimed[account] = true;
+          require(
+              IERC20(token).transfer(account, amount),
+              'Transfer failed.'
+          );
+      }
+  }
 </Code>
 
 #### A. Creating The Merkle Distributor Contract
