@@ -54,12 +54,23 @@ body {
 }
 
 /* code */
+.article .code-wrapper {
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: 1.5rem 0 !important;
+  padding: 0;
+  background-color: transparent;
+}
+
 .article .code-area {
   position: relative;
+  height: 100%;
 }
 
 .article .code-area pre {
   max-height: 350px;
+  border: none;
+  margin: 0;
 }
 
 .article .code-area .copy-icon {
@@ -81,10 +92,4 @@ body {
   color: var(--text-color);
   font-size: .875em;
   font-weight: 600;
-}
-
-.article pre {
-  border: none;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  margin: 1.5rem 0 !important;
 }

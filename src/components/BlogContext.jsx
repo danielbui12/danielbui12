@@ -8,6 +8,7 @@ export const BlogContext = createContext({
   setBlogs: () => { }
 });
 
+// eslint-disable-next-line react/prop-types
 export default function BlogContextProvider({ children }) {
   const blogContext = useContext(BlogContext)
   const [blogs, setBlogs] = useState(blogContext.blogs)

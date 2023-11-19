@@ -2,10 +2,10 @@
 import { useEffect, useState } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { materialDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { CopyIcon, PasteIcon } from './Icons';
 
-const CodeArea = ({ children, language }) => {
+const CodeArea = ({ code, language }) => {
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -17,19 +17,32 @@ const CodeArea = ({ children, language }) => {
 
   return (
     <div className="code-area">
-      <CopyToClipboard text={children} onCopy={() => setCopied(true)}>
+      <CopyToClipboard text={code} onCopy={() => setCopied(true)}>
         <button className='icon copy-icon'>
           {copied ? <PasteIcon /> : <CopyIcon />}
         </button>
       </CopyToClipboard>
       <SyntaxHighlighter
         language={language}
-        style={materialDark}
+        style={dracula}
       >
-        {children}
+        {code}
       </SyntaxHighlighter>
     </div>
   )
 }
 
-export default CodeArea
+const CodeWrapper = ({ children }) => {
+  console.log(children.props.children);
+  return (
+    <pre className='code-wrapper'>
+      <CodeArea
+        // eslint-disable-next-line react/no-children-prop
+        code={children.props.children}
+        language={children.props.className.replace('lang-', '')}
+      />
+    </pre>
+  )
+}
+
+export default CodeWrapper

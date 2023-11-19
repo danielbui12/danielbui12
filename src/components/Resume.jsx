@@ -85,7 +85,7 @@ function Resume() {
           <div className="card-header">
             <h4 className="mt-3 mb-2 text-light">
               <div className="mt-2">
-                <h4 className="text-light">Highlighted smart contracts I developed</h4>
+                <h4 className="text-light">Highlighted smart contracts I have participated/developed</h4>
                 <span className="line" />
               </div>
             </h4>

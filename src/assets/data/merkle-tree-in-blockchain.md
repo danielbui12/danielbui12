@@ -36,7 +36,8 @@ So now `processProofCalldata` will iterate through each element in the proof arr
   
 
 Then back in `verifyCalldata` we simply **verify** that the **computed hash matches the expected root hash**.
-<Code language="javascript">
+
+```javascript
     function verifyCalldata(
         bytes32[] calldata proof,
         bytes32 root,
@@ -72,7 +73,7 @@ Then back in `verifyCalldata` we simply **verify** that the **computed hash matc
             value := keccak256(0x00, 0x40)
         }
     }
-</Code>
+```
 
 ## Merkle Proofs in Bitcoin
 
@@ -95,7 +96,7 @@ We are going to take a look on how to use these special Ethereum root hashes in 
 
 One common use case for Merkle trees are airdrops, since Merkle proofs allow us to very efficiently implement **ERC20 token airdrops**. The implementation is rather simple using above mentioned Openzeppelin MerkleProof library. 
 
-<Code language="javascript">
+```javascript
   contract MerkleDistributor {
       address public immutable token;
       bytes32 public immutable merkleRoot;
@@ -131,7 +132,7 @@ One common use case for Merkle trees are airdrops, since Merkle proofs allow us 
           );
       }
   }
-</Code>
+```
 
 #### A. Creating The Merkle Distributor Contract
 
@@ -159,7 +160,8 @@ We can use [merkletreejs](https://github.com/miguelmota/merkletreejs) for creati
 3.  The result will be our leaf nodes that we can enter to create a new MerkleTree using merkletreejs.
 4.  We can print the full tree using `merkleTree.toString()`.
 5.  Or we can print individual proofs or the root hash.
-<Code language="sh">
+
+```shell
     Merke Tree
     ---------
     └─ 399f97e5a31d2[...]c9f3379ff72
@@ -170,12 +172,13 @@ We can use [merkletreejs](https://github.com/miguelmota/merkletreejs) for creati
     Merkle Root: 0x399f97e5[...]f37d0379ff72
     Proof 1: 0x15e7001d277[...]79440b8f27e36
     Proof 2: 0xdd3f64a1877[...]38df4b9dd8578
-</Code>
+```
 
 Now the original root will be stored in the contract. So you can see it's quite cheap to do an airdrop like this, only deploy a small contract and store the root hash.
 
 And users can create their proofs individually off-chain and receive the tokens whenever they want to.
-<Code language="javascript">
+
+```javascript
     const keccak256 = require("keccak256");
     const { MerkleTree } = require("merkletreejs");
     const Web3 = require("web3");
@@ -219,13 +222,15 @@ And users can create their proofs individually off-chain and receive the tokens 
     
     console.log("Proof 1: " + merkleTree.getHexProof(leafNodes[0]));
     console.log("Proof 2: " + merkleTree.getHexProof(leafNodes[1]));
-</Code>
+```
+
 #### C. Improving Gas Costs for Merkle Airdrops
 
 We can further improve upon this mechanism by storing the mapping for **already claimed tokens as bitmap**. I've explained the concept of [bitmaps in Solidity](/bitmaps) previously. This optimization was [taken from Uniswap](https://github.com/Uniswap/merkle-distributor/blob/master/contracts/MerkleDistributor.sol). 
 
 For our airdrop we can simply [add the index](https://github.com/Uniswap/merkle-distributor/blob/c3255bfa2b684594ecd562cacd7664b0f18330bf/src/balance-tree.ts#L8-L10) of the balance array to the proof itself. Then, when storing the claimed status, we simply update a single bit in the new uint256 => uint256 mapping.
 
+```javascript
     mapping(uint256 => uint256) private claimedBitMap;
     
     function isClaimed(uint256 index) public view returns (bool) {
@@ -248,6 +253,7 @@ For our airdrop we can simply [add the index](https://github.com/Uniswap/merkle-
         _setClaimed(index);
         [...]
     }
+```
 
 ### 2. Launching NFTs
 
@@ -260,6 +266,7 @@ In a similar way to airdropping ERC20 tokens, we can use Merkle proofs to **aird
 
 This is an incomplete example, but the idea here should be clear. You may also combine it with the bitmap trick from before to save even more gas.
 
+```javascript
     function _mint(
         address to, 
         uint256 amount, 
@@ -289,10 +296,9 @@ This is an incomplete example, but the idea here should be clear. You may also c
         );
         return MerkleProof.verify(merkleProof, MERKLE_ROOT, node);
     }
+```
 
 ### 4. Creating Proofs Inside The Contract
-
-p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
 
 I'm not sure what a use case would be for creating proofs inside a contract directly, but it's of course possible. You can use [murky](https://github.com/dmfxyz/murky) for this.
 
@@ -300,6 +306,7 @@ Create a new Merkle contract and you can call `getProof` on it. That's it!
 
 Now what would be a use case? I'm not sure, let me know in the comments please.
 
+```javascript
     // Initialize
     Merkle m = new Merkle();
     // Toy Data
@@ -311,6 +318,7 @@ Now what would be a use case? I'm not sure, let me know in the comments please.
     // Get Root, Proof, and Verify
     bytes32 root = m.getRoot(data);
     bytes32[] memory proof = m.getProof(data, 2); 
+```
 
 ### 5. Proving Ethereum Smart Contract State
 
@@ -331,6 +339,7 @@ And there is an RPC method since [EIP-1186](https://eips.ethereum.org/EIPS/eip-1
   
 You can find the full Solidity example [here](https://github.com/lidofinance/curve-merkle-oracle/blob/main/contracts/StateProofVerifier.sol).
 
+```javascript
     function extractSlotValueFromProof(
         bytes32 _slotHash,
         bytes32 _storageRootHash,
@@ -353,6 +362,7 @@ You can find the full Solidity example [here](https://github.com/lidofinance/cur
     
         return value;
     }
+```
 
 ### 6. Optimistic Rollups
 

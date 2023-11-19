@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 
 import Markdown from "markdown-to-jsx"
-import CodeArea from "./CodeArea";
+import CodeWrapper from "./CodeArea";
 import GoBackButton from "./GoBackButton";
 import DocumentMeta from 'react-document-meta';
 import Tag from "./Tag";
@@ -66,16 +66,13 @@ const Post = () => {
           <div className="post-wrapper mt-4">
             <Markdown options={{
               overrides: {
-                Code: {
-                  component: CodeArea
+                pre: {
+                  component: CodeWrapper
                 },
                 img: {
                   component: ({ src, alt }) => <img src={src} alt={alt} style={{ maxWidth: '100%' }} />
                 },
-                Image: {
-                  component: ({ src, alt }) => <img src={src} alt={alt} style={{ maxWidth: '100%' }} />
-                },
-                Alert: {
+                alert: {
                   component: Alert
                 }
               }
