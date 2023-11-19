@@ -1,11 +1,12 @@
 export const BASE_FILE_URL = "https://raw.githubusercontent.com/danielbui12/danielbui12/develop/src/assets/data/";
 export const BASE_WEBSITE_URL = "https://danielbui12.github.io/danielbui12/";
 
-export const NETWORKS = ["Ethereum", "Polygon", "Mumbai"]
+export const NETWORKS = ["Ethereum", "Polygon", "Mumbai", "Oasys"]
 export const NETWORK_BASE_URI = {
   [NETWORKS[0]]: "https://etherscan.io",
   [NETWORKS[1]]: "https://polygonscan.com",
   [NETWORKS[2]]: "https://mumbai.polygonscan.com",
+  [NETWORKS[3]]: "https://explorer.oasys.games"
 }
 
 export const EXPERIENCED_CONTRACT = {
@@ -64,3 +65,35 @@ export const EXPERIENCED_CONTRACT = {
     }
   ]
 }
+
+export const EXPERTISE = [
+  {
+    title: "Founder of MindForgeX",
+    time: "2023 - Present",
+    outline: [
+      "<a href='https://twitter.com/Solana_zh/status/1724340299873271952'>We snagged the 𝟑𝐫𝐝 𝐏𝐑𝐈𝐙𝐄 in the Solana Hyperdrive for the APAC region, recognized by DoraHacks!",
+      "<a href='https://twitter.com/SuperteamVN/status/1725154915452907545/photo/2'>Hornorable mention at Solana HyperDrive global hackathon.</a>",
+      "<a href='https://twitter.com/RelipaSoftware/status/1706133279152431375'>Achieve top 2 of Solana Consumer Hack 08 by Solana Super Team Vietnam</a>.",
+      "<a href='https://twitter.com/MindForgeX'>MindForgeX on Twitter</a>."
+    ],
+  },
+  {
+    title: "Blockchain Developer at RELIPA CO., LTD",
+    time: "2022 - Present",
+    outline: [
+      "Handle multiple tasks well: participate in 4-5 projects at one time.",
+      "Participating in blockchain development: DeFi, dApp, ecosystem, blockchain layer - 1, etc.",
+      "Actively join external hackathons about blockchain and won several awards: In top 10 at Road to Grizzlython hackathon of Web3 Space, Top 2 at Hackathon 08 of Solana SuperTeam Vietnam."
+    ]
+  },
+  {
+    time: "2020 - 2023",
+    title: "Software Engineer at TORITI LTD",
+    outline: [
+      "R&D confused business features and new technologies.",
+      "Ensuring progress, quality of work by reviewing code, communicating with members in the team.",
+      "Developing & Operating system which got over 10,000 users every month.",
+      "Team leadership: Training and support in order to build a efficient team in work."
+    ]
+  }
+]

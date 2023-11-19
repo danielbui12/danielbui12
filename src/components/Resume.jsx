@@ -1,4 +1,4 @@
-import { EXPERIENCED_CONTRACT, NETWORK_BASE_URI } from "../utils/constant"
+import { EXPERIENCED_CONTRACT, EXPERTISE, NETWORK_BASE_URI } from "../utils/constant"
 
 function Resume() {
   return (
@@ -16,45 +16,27 @@ function Resume() {
                   <span className="line" />
                 </div>
               </div>
-              <div className="card-body">
-                <h6 className="title text-danger">2022 - Present</h6>
-                <p className="text-light">
-                  Blockchain Developer at RELIPA CO., LTD
-                </p>
-                <ul className="mt40 info">
-                  <li>
-                    Handle multiple tasks well: participate in 4-5 projects at one
-                    time.
-                  </li>
-                  <li>
-                    Participating in blockchain development: DeFi, dApp,
-                    ecosystem, blockchain layer-1, etc.
-                  </li>
-                  <li>
-                    Form a team to compete in external hackathons about blockchain
-                    and won several awards: In top 10 at Road to Grizzlython hackathon of Web3 Space, Top 2 at Hackathon 08 of Solana SuperTeam Vietnam.
-                  </li>
-                </ul>
-              </div>
-              <div className="card-body">
-                <h6 className="title text-danger">2020 - 2023</h6>
-                <p className="text-light">Software Engineer at TORITI LTD</p>
-                <ul className="mt40 info">
-                  <li>
-                    R&amp;D confused business features and new technologies.
-                  </li>
-                  <li>
-                    Ensuring progress, quality of work by reviewing code,
-                    communicating with members in the team.
-                  </li>
-                  <li>
-                    Developing & Operating system which got over 10,000 users every month.
-                  </li>
-                  <li>
-                    Team leadership: Training and support in order to build a efficient team in work.
-                  </li>
-                </ul>
-              </div>
+              {
+                EXPERTISE.map(_item => {
+                  return (
+                    <div key={JSON.stringify(_item)} className="card-body">
+                      <h6 className="title text-danger">{_item.time}</h6>
+                      <p className="text-light">
+                        {_item.title}
+                      </p>
+                      <ul className="mt40 info">
+                        {
+                          _item.outline.map(_outline => {
+                            return (
+                              <li key={_outline} dangerouslySetInnerHTML={{ __html: _outline }} />
+                            )
+                          })
+                        }
+                      </ul>
+                    </div>
+                  )
+                })
+              }
             </div>
           </div>
           <div className="col-12 col-md-4">
