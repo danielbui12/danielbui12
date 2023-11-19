@@ -1,5 +1,9 @@
 [
   "blockchain",
   "ethereum",
-  "transaction"
+  "transaction",
+  "merkle-tree",
+  "hash-functions",
+  "data-verification",
+  "gas-saving"
 ]

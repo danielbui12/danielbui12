@@ -11,5 +11,19 @@
       "ethereum",
       "transaction"
     ]
+  },
+  {
+    "code": "merkle-tree-in-blockchain",
+    "title": "Merkle Tree in blockchain",
+    "description": "The use of Merkle trees can significantly reduce the amount of data that a trusted agency needs to maintain for verification purposes. It separates the verification of data from the data itself. The Merkle tree can be stored locally or on a distributed system.",
+    "content": "merkle-tree-in-blockchain.md",
+    "timestamp": 1700387524079,
+    "tag": [
+      "blockchain",
+      "merkle-tree",
+      "hash-functions",
+      "data-verification",
+      "gas-saving"
+    ]
   }
 ]
