@@ -1,7 +1,7 @@
 export const BASE_FILE_URL = "https://raw.githubusercontent.com/danielbui12/danielbui12/develop/src/assets/data/";
 export const BASE_WEBSITE_URL = "https://danielbui12.github.io/danielbui12/";
 
-export const NETWORKS = ["Ethereum", "Polygon", "Mumbai", "Oasys"]
+export const NETWORKS = ["Ethereum", "Polygon", "Mumbai", "Oasys HUB"]
 export const NETWORK_BASE_URI = {
   [NETWORKS[0]]: "https://etherscan.io",
   [NETWORKS[1]]: "https://polygonscan.com",
@@ -10,6 +10,29 @@ export const NETWORK_BASE_URI = {
 }
 
 export const EXPERIENCED_CONTRACT = {
+  "OAS Jumbo": [
+    {
+      contractName: "Prize",
+      description: "Containing logics of drawing, claiming lottery",
+      type: "Mainnet",
+      network: NETWORKS[3],
+      address: "0x8cBDd3B4a9770C0A199eF83B901bEc5CA25a4612"
+    },
+    {
+      contractName: "Raffle",
+      description: "Containing logics of buy ticket, staking, re-staking, withdrawing",
+      type: "Mainnet",
+      network: NETWORKS[3],
+      address: "0x7e6347ddC55dF19B94C9FE893bf551CFc8C2208b"
+    },
+    {
+      contractName: "RaffleTicket",
+      description: "ERC721 NFT stands for the ticket",
+      type: "Mainnet",
+      network: NETWORKS[3],
+      address: "0xAC426f8F34dc455Cf7Cd6379CA9a812444AccC52"
+    },
+  ],
   "BackerzIII": [
     {
       contractName: "Factory ERC1155",
