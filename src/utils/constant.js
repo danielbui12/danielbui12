@@ -33,41 +33,57 @@ export const EXPERIENCED_CONTRACT = {
       address: "0xAC426f8F34dc455Cf7Cd6379CA9a812444AccC52"
     },
   ],
-  "BackerzIII": [
+  "Orada NFT QR": [
     {
-      contractName: "Factory ERC1155",
-      description: "Create many NFT by ERC1155 standard by contract",
+      contractName: "ERC721 Factory",
+      description: "Create many NFT by ERC721 standard by contract",
       type: "Mainnet",
       network: NETWORKS[1],
-      address: "0x0317ea478a8E4472c80C9cbc6BB29aED6E91C3F0"
+      address: "0xb2262361C05A751B30f58D0F367C81987140E46C"
     },
     {
-      contractName: "Factory ERC721",
+      contractName: "NFT Distribution",
+      description: "Distributing NFT logic",
+      type: "Mainnet",
+      network: NETWORKS[1],
+      address: "0x175ff9cF84d9438e2048CF7E6645Edf35A282597"
+    },
+  ],
+  "BackerzIII": [
+    {
+      contractName: "ERC1155 Factory",
+      description: "Create many NFT by ERC1155 standard by contract",
+      type: "Mainnet",
+      network: NETWORKS[0],
+      address: "0xF7A517DDd202d4c8721F15E2436D1E0Bb69BAFb0"
+    },
+    {
+      contractName: "ERC721 Factory",
       description: "Create many NFT by ERC721 standard by contract",
       type: "Testnet",
-      network: NETWORKS[2],
-      address: "0xe6b735f3dCE3181a9749F40354dC44668a89701d"
+      network: NETWORKS[0],
+      address: "0xa1aF885B9523A8d8E154113302DA9CD0Ee7108aF"
     },
     {
       contractName: "RewardInternalDistribution",
       description: "Reward distribution for Project Owner deposit ERC721/ERC1155 rewards created by Factory ERC1155 & Factory 721. User claim them by lazy mint.",
       type: "Mainnet",
-      network: NETWORKS[1],
-      address: "0x5940B6b891362Cc0626C867490a0f16D549Cfa75"
+      network: NETWORKS[0],
+      address: "0x98C2E7414aB689Ba635571C29813cA4868479a99"
     },
     {
       contractName: "RewardStorage",
       description: "Store reward for whole system.",
       type: "Mainnet",
-      network: NETWORKS[1],
-      address: "0xc0B18B7409781C68005C0f42d42d7100Aa48c488"
+      network: NETWORKS[0],
+      address: "0x91030249481159e853105A4D11BA4805cd772B39"
     },
     {
       contractName: "RewardExternalDistribution",
       description: "Reward distribution for Project Owner deposit ERC721/ERC1155 rewards created by any contract. User claim them by RewardExternalDistribution.",
       type: "Mainnet",
-      network: NETWORKS[1],
-      address: "0x530D5E28400527b2945af585A710Ff8Bd4a86f63"
+      network: NETWORKS[0],
+      address: "0xA179f72815bB33810fCd7813B4511A6205cF29f6"
     }
   ],
   "MetaX": [
@@ -75,8 +91,8 @@ export const EXPERIENCED_CONTRACT = {
       contractName: "MetaXPayment",
       description: "MetaXPayment handles buy NFT from Opensea through Seaport smart contract.",
       type: "Mainnet",
-      network: NETWORKS[1],
-      address: "0x90135839c7f8161DD13638Cc2aE4DDf01b3454fB"
+      network: NETWORKS[0],
+      address: "0x0Da5B14e030e72F270c0b13A543cCEAe78F17fDe"
     }
   ],
   "DAO ecosystem": [
