@@ -25,6 +25,13 @@ const Post = () => {
         .then(response => setPostContent(response))
         .catch(err => console.log(err))
     }
+    // import("../assets/data/customize-your-own-wallet-on-solana.md")
+    //   .then(res => {
+    //     fetch(res.default)
+    //       .then(response => response.text())
+    //       .then(response => setPostContent(response))
+    //       .catch(err => console.log(err))
+    //   })
   }, [postCode]);
 
   useEffect(() => {

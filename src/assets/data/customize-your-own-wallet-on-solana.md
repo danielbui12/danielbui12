@@ -1,6 +1,6 @@
-# Customize Your Own Wallet on Solana
-
-If you've ever used an Ethereum wallet, you might have found the address system a bit confusing¹. Ethereum addresses are 42 characters long, starting with '0x' and followed by 40 alphanumeric characters like 0x3D2...415. This can be overwhelming, especially when you're dealing with multiple ERC20 tokens³. But don't worry, Solana offers a more user-friendly approach.
+<alert type="info">
+➡️ If you've ever used an Ethereum wallet, you might have found the address system a bit confusing¹. Ethereum addresses are 42 characters long, starting with '0x' and followed by 40 alphanumeric characters like **0x3D2...415**. This can be overwhelming, especially when you're dealing with multiple ERC20 tokens. But don't worry, Solana offers a more user-friendly approach.
+</alert>
 
 ## Creating a Solana Wallet
 
@@ -15,15 +15,17 @@ Let's dive into it.
 
 - Make sure you've installed [Rust](https://solanacookbook.com/getting-started/installation.html#install-rust) and [Solana CLI](https://solanacookbook.com/getting-started/installation.html#install-cli)
 
-- Once you complete install, run 
-```sh
+- Once you complete install, run:
+
+```shell
 $ solana-keygen --version
 
 solana-keygen 1.16.3 (src:bc7870f3; feat:2891131721, client:SolanaLabs)
 ```
 
 - Now, this is the main part. We're going to use `solana-keygen grind` to create a new Solana wallet. Before it, let's read the doc by running
-```sh
+
+```shell
 $ solana-keygen grind --help
 
 
@@ -46,8 +48,9 @@ $ solana-keygen grind --help
 
 As you can see `solana-keygen grind` allows you to customize address by passing `--starts-and-ends-with` or `--starts-with`
 
-Now, I want to create my own wallet with prefix `dani` by running
-```sh
+Now, I want to create my own wallet with prefix **"dani"** by running
+
+```shell
 $ solana-keygen grind --starts-with dani:1 --ignore-case
 ```
 
@@ -58,9 +61,10 @@ As compared to Base64, it removes 6 characters which may cause confusion due to 
 </alert>
 
 
-<alert type="error">
+<alert type="secondary">
 ⚠️  Some custom text passing might be not matched in base58 address as I previously mentioned above.
 
+```shell
 Searching with 8 threads for:
         1 pubkey that starts with 'dani' and ends with ''
 Searched 1000000 keypairs in 4s. 0 matches found.
@@ -73,6 +77,7 @@ Searched 7000000 keypairs in 33s. 0 matches found.
 Searched 8000000 keypairs in 39s. 0 matches found.
 Searched 9000000 keypairs in 44s. 0 matches found.
 Searched 10000000 keypairs in 50s. 0 matches found.
+```
 </alert>
 
 Let's try a different one, starting with `ani`
@@ -84,7 +89,8 @@ Searching with 8 threads for:
         1 pubkey that starts with 'ani' and ends with ''
 Wrote keypair to aNi7a7dbuMSgSyaypUA5RYQ5isWWCgphtYFmmFhCbjk.json
 ```
-You can see that it has found an address starting with "ani". Because its format must be in base58, so the prefix is "aNi".
+
+You can see that it has found an address starting with **"ani"**. Because its format must be in base58, so the prefix is **"aNi"**.
 
 
 Finally, you can use it for many purposes, for a wallet, for deploying a smart contract, ...
