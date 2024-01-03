@@ -52,16 +52,15 @@ $ solana-keygen grind --starts-with dani:1 --ignore-case
 ```
 
 <alert type="warning">
-Solana addresses are represented in Base58 encoding. Base58 encoding is a modified version of Base64 encoding and made popular by Bitcoin.
+⚠️  Solana addresses are represented in Base58 encoding. Base58 encoding is a modified version of Base64 encoding and made popular by Bitcoin.
 
 As compared to Base64, it removes 6 characters which may cause confusion due to the similar look i.e. capital i [I], lowercase L [l], capital o [O], zero [0], plus [+] and slash [/]. This is done to remove any kind of ambiguity because addresses are a sensitive information and even single character if typed mistakenly can lead to the permanent loss of the funds.
 </alert>
 
 
 <alert type="error">
-Some custom text passing might be not matched in base58 address as I previously mentioned above.
+⚠️  Some custom text passing might be not matched in base58 address as I previously mentioned above.
 
-```sh
 Searching with 8 threads for:
         1 pubkey that starts with 'dani' and ends with ''
 Searched 1000000 keypairs in 4s. 0 matches found.
@@ -74,7 +73,6 @@ Searched 7000000 keypairs in 33s. 0 matches found.
 Searched 8000000 keypairs in 39s. 0 matches found.
 Searched 9000000 keypairs in 44s. 0 matches found.
 Searched 10000000 keypairs in 50s. 0 matches found.
-```
 </alert>
 
 Let's try a different one, starting with `ani`
