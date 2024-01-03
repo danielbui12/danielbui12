@@ -5,5 +5,8 @@
   "merkle-tree",
   "hash-functions",
   "data-verification",
-  "gas-saving"
+  "gas-saving",
+  "solana",
+  "address",
+  "wallet"
 ]
