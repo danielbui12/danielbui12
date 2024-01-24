@@ -8,5 +8,8 @@
   "gas-saving",
   "solana",
   "address",
-  "wallet"
+  "wallet",
+  "sui-network",
+  "sui-token",
+  "$sui"
 ]

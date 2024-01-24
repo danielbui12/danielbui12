@@ -1,5 +1,17 @@
 [
   {
+    "code": "sui-network-part-1",
+    "title": "Sui network - What was happened with $SUI?",
+    "description": "In 2023 $SUI had it own ATH is $1.4. However it had dumped to $0.37. Not at all, it was completely back to ATH. WTF is going on with $SUI?. Let's find out!!!!",
+    "content": "sui-network-part-1.md",
+    "timestamp": 1704289190481,
+    "tag": [
+      "sui-network",
+      "sui-token",
+      "$sui"
+    ]
+  },
+  {
     "code": "customize-your-own-wallet-on-solana",
     "title": "Customize your own wallet on Solana",
     "description": "If you are so boring with the address 0x0..000 in Ethereum, let's create your better own in Solana.",
