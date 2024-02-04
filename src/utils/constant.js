@@ -60,7 +60,7 @@ export const EXPERIENCED_CONTRACT = {
     {
       contractName: "ERC721 Factory",
       description: "Create many NFT by ERC721 standard by contract",
-      type: "Testnet",
+      type: "Mainnet",
       network: NETWORKS[0],
       address: "0xa1aF885B9523A8d8E154113302DA9CD0Ee7108aF"
     },

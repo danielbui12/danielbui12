@@ -1,3 +1,7 @@
+import { FaXTwitter } from "react-icons/fa6";
+import { LiaTelegramPlane } from "react-icons/lia";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
 
 function SocialIcon() {
   return (
@@ -9,7 +13,7 @@ function SocialIcon() {
           href="https://twitter.com/danielbui_12"
           target="_blank"
         >
-          <i className="ti-twitter" aria-hidden="true" />
+          <FaXTwitter />
         </a>
       </li>
       <li className="social-item">
@@ -19,7 +23,7 @@ function SocialIcon() {
           href="https://t.me/danielbui12"
           target="_blank"
         >
-          <i className="ti-comments" aria-hidden="true" />
+          <LiaTelegramPlane />
         </a>
       </li>
       <li className="social-item">
@@ -29,7 +33,7 @@ function SocialIcon() {
           href="https://www.linkedin.com/in/daniel-nan"
           target="_blank"
         >
-          <i className="ti-linkedin" aria-hidden="true" />
+          <FaLinkedinIn />
         </a>
       </li>
       <li className="social-item">
@@ -39,7 +43,7 @@ function SocialIcon() {
           href="https://github.com/danielbui12"
           target="_blank"
         >
-          <i className="ti-github" aria-hidden="true" />
+          <FaGithub />
         </a>
       </li>
     </ul>
