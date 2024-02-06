@@ -7,7 +7,7 @@ function BlogNav() {
   return (
     <nav
       style={{ boxShadow: 'unset' }}
-      className="navbar navbar-expand-lg navbar-dark bg-dark flex-column justify-content-between"
+      className="navbar navbar-expand-lg navbar-dark flex-column justify-content-between"
       data-spy="affix"
       data-offset-top={100}
     >

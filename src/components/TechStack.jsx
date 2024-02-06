@@ -1,6 +1,6 @@
 function TechStack() {
   return (
-    <section className="section bg-dark break" id="techstack">
+    <section className="section break" id="techstack">
       <div className="container">
         <h2 className="mb-5 pb-4 text-light">
           <span className="text-danger">Tech</span> Stack

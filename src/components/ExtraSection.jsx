@@ -1,6 +1,6 @@
 function ExtraSection() {
   return (
-    <section className="section bg-dark py-5">
+    <section className="section py-5">
       <div className="container flex-column text-center navbar">
         <h2 className="text-light mb-5 font-weight-normal">
           I Am Available For FreeLance

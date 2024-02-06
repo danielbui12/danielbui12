@@ -3,7 +3,11 @@ function Header() {
     <header className="header">
       <div className="container">
         <div className="header-content">
-          <h6 className="header-subtitle">Hello, Welcome to my portfolio!</h6>
+          <div className="typing-wrapper">
+            <div className="typing-text">
+              Hello, Welcome to my portfolio!
+            </div>
+          </div>
         </div>
       </div>
     </header>

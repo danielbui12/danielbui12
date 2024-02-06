@@ -6,7 +6,7 @@ import { FaMedal } from "react-icons/fa6";
 
 function About() {
   return (
-    <div className="container-fluid bg-dark">
+    <div className="container-fluid">
       <div id="about" className="row about-section break">
         <WhoIAm />
         <PersonalInfo />

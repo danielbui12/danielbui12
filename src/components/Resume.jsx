@@ -2,7 +2,7 @@ import { EXPERIENCED_CONTRACT, EXPERTISE, NETWORK_BASE_URI } from "../utils/cons
 
 function Resume() {
   return (
-    <section className="section bg-dark break" id="resume">
+    <section className="section break" id="resume">
       <div className="container">
         <h2 className="mb-5 text-light">
           <span className="text-danger">My</span> Resume

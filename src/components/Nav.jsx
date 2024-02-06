@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 function Nav() {
   return (
     <nav
-      className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark"
+      className="navbar sticky-top navbar-expand-lg navbar-dark shadow-lg"
       data-spy="affix"
       data-offset-top={100}
     >
