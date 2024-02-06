@@ -11439,6 +11439,9 @@ pre .code {
 .social-icons .social-link:hover {
   color: #F85C70;
 }
+.navbar.affix {
+  background-color: #474747b0;
+}
 
 .navbar .navbar-nav:first-child .nav-item:first-child .nav-link {
   padding-left: 0;
@@ -11548,8 +11551,6 @@ pre .code {
   position: relative;
   height: 10vh;
   min-height: 200px;
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.png);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.png);
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
