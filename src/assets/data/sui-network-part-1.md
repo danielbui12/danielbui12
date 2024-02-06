@@ -1,5 +1,3 @@
-## SUI NETWORK - PART 1
-
 # HOT DRAMA SUI NETWORK
 
 > ❕❕❕ Sui network is a f**king scam project.
