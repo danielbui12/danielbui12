@@ -16,16 +16,14 @@ function TechStack() {
               <td>
                 <ul className="info text-light">
                   <li>
-                    Solidity, Chainlink, Truffle, Hardhat, Moralis, Infura, IPFS,
-                    Near SDK, etc.
+                    Solidity, Chainlink, Truffle, Hardhat, Foundry, Moralis, Infura, etc;
                   </li>
                   <li>
-                    Understanding operating mechanism of PoW, PoS, PoH, PoA, EVM,
-                    Yield Farming, Liquid Staking.
+                    Understanding PoW, PoS, PoH, PoA, EVM, Yield Farming, Liquid Staking;
                   </li>
                   <li>
                     Experienced in Marketplace, Lottery, Lending-Renting NFT,
-                    Auction, etc.
+                    Auction, etc;
                   </li>
                   <li>Solana, Rust, Anchor, cNFT, xNFT, Helius, etc</li>
                 </ul>
@@ -39,9 +37,9 @@ function TechStack() {
               </th>
               <td>
                 <ul className="info text-light">
-                  <li>ReactJS, NextJS, EJS, Vite, React Native, Redux, etc.</li>
+                  <li>ReactJS, NextJS, EJS, Vite, React Native, Redux, etc;</li>
                   <li>
-                    NodeJS, ExpressJS, MQTT, SocketIO, web-socket stream,
+                    NodeJS, ExpressJS, NestJS, MQTT, SocketIO, web-socket stream,
                     Sequelize, Azure Functions, Azure Static Web Apps, serverless
                     etc.
                   </li>
@@ -56,8 +54,7 @@ function TechStack() {
               </th>
               <td>
                 <div className="pl-4 info text-light">
-                  Chakra UI, Antd, Rsuite, Material UI, Reactstrap, Less,
-                  SASS/SCSS, Bootstrap, Tailwind, etc.
+                  Chakra UI, Antd, Rsuite, Material UI, Reactstrap, Less, SASS/SCSS, Bootstrap, Tailwind, etc.
                 </div>
               </td>
             </tr>
@@ -93,8 +90,28 @@ function TechStack() {
               </th>
               <td>
                 <div className="pl-4 info text-light">
-                  IT mentor, Team leadership.
+                  IT mentor, Team Leadership.
                 </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <span className="badge badge-primary">
+                  <span className="h6">Cloud</span>
+                </span>
+              </th>
+              <td>
+                <ul className="info text-light">
+                  <li>
+                    Firebase: FCM, Authentication, Static Hosting, Collection, Realtime-Database, etc;
+                  </li>
+                  <li>
+                    Azure: Functions, Static Web-app, PlayFab, etc;
+                  </li>
+                  <li>
+                    AWS: EC2, Lambda, IAM, Cloud Watch, Cloud Formation, Route53, Load-Balancer, RDS, SQS, etc.
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -106,13 +123,10 @@ function TechStack() {
               <td>
                 <ul className="info text-light">
                   <li>
-                    Firebase SDK, Facebook SDK, MoMo payment service, VNPay
-                    payment service, Zalo Notification Service SDK, Zalo Mini App
-                    SDK, etc.
+                    Facebook SDK, MoMo payment service, VNPay payment service, Zalo Notification Service SDK, Zalo Mini App SDK;
                   </li>
                   <li>
-                    Hands-on setting up pipeline on Github/Gitlab, automatic
-                    deploying script.
+                    Setting up pipeline on Github/Gitlab, automatic deploying script, CLI.
                   </li>
                 </ul>
               </td>
