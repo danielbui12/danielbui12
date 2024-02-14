@@ -117,12 +117,12 @@ export const EXPERTISE = [
     ],
   },
   {
-    title: "Blockchain Developer at RELIPA CO., LTD",
+    title: "JavaScript Developer / Blockchain Developer at RELIPA CO., LTD",
     time: "2022 - Present",
     outline: [
-      "Handle multiple tasks well: participate in 4-5 projects at one time.",
-      "Participating in blockchain development: DeFi, dApp, ecosystem, blockchain layer - 1, etc.",
-      "Actively join external hackathons about blockchain and won several awards: In top 10 at Road to Grizzlython hackathon of Web3 Space, Top 2 at Hackathon 08 of Solana SuperTeam Vietnam."
+      "Hands-on setting up pipeline on Gitlab, being able to multitask (joining 4-5 projects at once)",
+      "Participating in blockchain development: DEFI, ecosystem, Layer-1 / Layer-2.",
+      "Achievement: making 1 project from having negative turnover to on-time deliverable, continuously receiving compliments and positive feedback from customers in 3 projects continuously, bringing turnover of 1 project over 3 man-months."
     ]
   },
   {
@@ -130,9 +130,9 @@ export const EXPERTISE = [
     title: "Software Engineer at TORITI LTD",
     outline: [
       "R&D confused business features and new technologies.",
-      "Ensuring progress, quality of work by reviewing code, communicating with members in the team.",
+      "Ensuring progress, quality of work by reviewing code, making the plan, and holding daily meetings with members in the team.",
       "Developing & Operating system which got over 10,000 users every month.",
-      "Team leadership: Training and support in order to build a efficient team in work."
+      "Improving sense of responsibility and other soft skills in work, experienced in remote working, ability to work independently."
     ]
   }
 ]
