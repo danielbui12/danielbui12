@@ -1,4 +1,4 @@
-import { EXPERIENCED_CONTRACT, EXPERTISE, NETWORK_BASE_URI } from "../utils/constant"
+import { EXPERTISE } from "../utils/constant"
 
 function Resume() {
   return (
@@ -63,7 +63,9 @@ function Resume() {
           </div>
         </div>
 
-        <div className="card bg-dark pb-3">
+      </div>
+
+      {/* <div className="card bg-dark pb-3">
           <div className="card-header">
             <h4 className="mt-3 mb-2 text-light">
               <div className="mt-2">
@@ -125,9 +127,8 @@ function Resume() {
             </div>
           </div>
 
-          <div className="pl-5"><i>For more, please direct to my Github repository.</i></div>
-        </div>
-      </div>
+          <div className="pl-5"><i>For more, please direct to my Github repository.</i></div> 
+                </div> */}
     </section>
   )
 }

@@ -58,7 +58,7 @@ function TechStack() {
                 </div>
               </td>
             </tr>
-            <tr>
+            {/* <tr>
               <th scope="row">
                 <span className="badge badge-primary">
                   <span className="h6">Python</span>
@@ -69,7 +69,7 @@ function TechStack() {
                   Pandas, Numpy, OpenCV 2, Flask API, etc.
                 </div>
               </td>
-            </tr>
+            </tr> */}
             <tr>
               <th scope="row">
                 <span className="badge badge-primary">

@@ -30,10 +30,10 @@ const WhoIAm = () => {
         software development. My ambition is to offer customers high-quality
         software with the most convenient and good quality.
       </p>
-      <button className="btn btn-outline-danger">
+      {/* <button className="btn btn-outline-danger">
         <i className="icon-down-circled2 " />
         Download My CV
-      </button>
+      </button> */}
 
 
 
