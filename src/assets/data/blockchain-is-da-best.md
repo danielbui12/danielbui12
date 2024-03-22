@@ -10,47 +10,50 @@ Ethereum Improvement Proposal (EIP)
 - PoW is the primary consensus mechanism. Miner acts as a node, it is a super computer that participates in validate transactions then submit them to blockchain network. After that, blockchain system rewards native token to Miner who submit  the NONCE earlies.
 - In PoW, miner can validate transactions by forecasting the NONCE and put it in to hash function along with previous block hash to calculate the new block hash. If the new block hash is smaller than the target ⇒ It’s completely verified.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9c3622ba-abbb-4059-82d1-da86ab8f133d/Untitled.png)
+![PoW Block](https://www.asynclabs.co/wp-content/uploads/2018/07/proof-of-work-right-result-2.png)
 
 - PoW has a potential risk: miner which can occupy over 51% above power of all, it can control the whole blockchain system.
 
 # Proof of Stake (PoS)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/994e6b0f-d933-4aba-821b-2bb8ce338745/Untitled.png)
+![PoS](https://file.publish.vn/coin98/2021-07/staking-trong-proof-of-stake-1627407867548.png)
 
 # Proof of History (PoH)
 
-- Overview: Consensus mechanism sẽ liên tục snapshot dữ liệu block/transaction sau đó dựa vào timestamp của transaction/block cùng với các image đã được snapshot sắp xếp lại dữ liệu theo đúng trình tự
-- PoH sử dụng recursive verifiable delay function, nó sử dụng thuật toán mã hoá SHA-256 để mã hoá dữ liệu transaction, và mỗi transaction có function timestamp riêng, từ đấy consensus mechanism có thể xác định được cái nào tới trước, cái nào đến sau
-- Mỗi node sẽ có cryptographic clock giúp mạng để xác thực giao dịch on time và sắp xếp event mà ko phải đợi các node khác thực hiện xong transaction.
+- Overview: Consensus mechanism sẽ liên tục snapshot dữ liệu block/transaction sau đó dựa vào timestamp của transaction/block cùng với các image đã được snapshot sắp xếp lại dữ liệu theo đúng trình tự bằng thuật toán recursive verifiable delay function
+- Mỗi node sẽ có cryptographic clock giúp mạng để xác thực giao dịch on time và sắp xếp event mà ko phải đợi các node khác thực hiện xong transaction. Trong node sử dụng thuật toán mã hoá SHA-256 để mã hoá dữ liệu transaction, và mỗi transaction sẽ có 1 timestamp function riêng. Nhờ đó mà consensus mechanism có thể xác định được transaction nào đến trước. 
+
+![Proof of History](https://qph.cf2.quoracdn.net/main-qimg-69d5b990aa1e5c9031a81be87300a8f0-lq)
 
 # Fork
 
-<aside>
-💡 Là quá trình thay đổi giao thức hoặc bộ quy tắc cơ bản của blockchain. Fork xảy ra tại một điểm nơi phần mềm được sao chép và sửa đổi. Khi điều này xảy ra, blockchain sẽ tách ra và tạo ra một blockchain mới, nhưng vẫn chia sẻ lịch sử từ blockchain ban đầu. Tuy nhiên, blockchain mới sẽ hoạt động theo quy tắc khác. 
 
-Hiện tượng này gọi là Re-organization.
-
-</aside>
+> 💡 Là quá trình thay đổi giao thức hoặc bộ quy tắc cơ bản của blockchain. Fork xảy ra tại một điểm nơi phần mềm được sao chép và sửa đổi. Khi điều này xảy ra, blockchain sẽ tách ra và tạo ra một blockchain mới, nhưng vẫn chia sẻ lịch sử từ blockchain ban đầu. Tuy nhiên, blockchain mới sẽ hoạt động theo quy tắc khác.
+>
+> Hiện tượng này gọi là Re-organization.
 
 ## Hard Fork
 
 Dẫn đến sự phân tách chuỗi vĩnh viễn, vì phiên bản cũ không còn tương thích với phiên bản mới
 
+## Soft Fork
+
+https://coin68.com/fork-soft-fork-va-hard-fork-la-gi/
+
 # Ethereum Virtual Machine (EVM)
 
-- Acting as an intermediary in implementation ****a ****smart contract
-- 1 node is equivalent to ****1 EVM
+- Acting as an intermediary in implementation a smart contract
+- 1 node is equivalent to 1 EVM
 
 ⇒ EVM allows each DApp to access and operate by each different way. It helps DApp easy to integrate and scale  
 
-# Yield Farming
+# Impermanent loss
 
 - For example: 1 user sends a couple of token to the **Liquidity pool** and he becomes a **Liquidity provider**.
 - Liquidity pool allows other users to swap token, get a loan ⇒ The profit comes from that will be shared to Liquidity provider.
-- However, Liquidity provider may have to get **Impermanent loss**.
+- However, Liquidity provider may have to get.
 
-ex: user spent 100 **token A,** 0.05 **token B**, A = 1$, B = 2000$
+ex: user spent 100 **token A**, 0.05 **token B**, A = 1$, B = 2000$
 
 At a specific time, token A price may higher than token B price, and vice versa.
 
@@ -64,13 +67,10 @@ If user withdraws, he’ll get 50 token A and 0.08 token B, A = 1.5$, B = 2000$
 
 # Optimistic
 
-<aside>
-💡 Optimistic Rollup là một giải pháp Layer 2 scaling, giải quyết vấn đề về chi phí và tốc độ giao dịch chậm trên blockchain bằng cách tạo ra một sidechain (còn gọi là L2 chain) để xử lý các giao dịch nhanh hơn và với chi phí thấp hơn. 
-
-Hoạt động bằng cách  xác thực ***bằng chứng ngược lại
-Optimistic Rollup sử dụng cơ chế kiểm tra chéo, đảm bảo rằng tất cả các giao dịch đều được xác thực đúng mức.***
-
-</aside>
+> 💡 Optimistic Rollup là một giải pháp Layer 2 scaling, giải quyết vấn đề về chi phí và tốc độ giao dịch chậm trên blockchain bằng cách tạo ra một sidechain (còn gọi là L2 chain) để xử lý các giao dịch nhanh hơn và với chi phí thấp hơn. 
+> 
+> Hoạt động bằng cách  xác thực ***bằng chứng ngược lại
+Optimistic Rollup sử dụng cơ chế kiểm tra chéo, đảm bảo rằng tất cả các giao dịch đều được xác thực đúng mức.
 
 ## Cơ chế hoạt động
 
@@ -89,10 +89,8 @@ Optimistic Rollup sử dụng cơ chế kiểm tra chéo, đảm bảo rằng t�
 
 # zkSync
 
-<aside>
-💡 **zkSync là một giải pháp layer-2 thuộc nhóm ZK-Rollups sử dụng kỹ thuật bằng chứng mật mã được gọi là Zero-Knowledge Proofs (ZKPs) để ngay lập tức chứng minh tính hợp lệ của các giao dịch**
 
-</aside>
+> 💡 **zkSync là một giải pháp layer-2 thuộc nhóm ZK-Rollups sử dụng kỹ thuật bằng chứng mật mã được gọi là Zero-Knowledge Proofs (ZKPs) để ngay lập tức chứng minh tính hợp lệ của các giao dịch**
 
 ## Lợi ích
 
@@ -133,10 +131,7 @@ EVM executes smart contracts on-chain, which can slow down transaction processin
 
 ## Cơ chế hoạt động
 
-<aside>
-💡 An IOU (I Owe You) token is a type of digital asset that is used to represent debt between two parties
-
-</aside>
+> 💡 An IOU (I Owe You) token is a type of digital asset that is used to represent debt between two parties
 
 - Lock and mint: Khi token được gửi từ Chain A sang chain B. User lock token in smart contract of chain A, then wrapped token được mint trên chain B dưới dạng IOU và ngược lại.
 - Burn and mint: User burn token of chain A, then native token giống nhau được mint trên chain B.
@@ -156,28 +151,33 @@ EVM executes smart contracts on-chain, which can slow down transaction processin
 
 ### Một số dự án nổi bật
 
-- **Multichain**
-- Wormhole
+- Multichain
 - Layer-zero
 - Axela
+- Wormhole
+  - Standard Relayer
+![Standard Relayer](https://docs.wormhole.com/~gitbook/image?url=https:%2F%2F2048606572-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MkD9YTtNUKJxtD9pDF-%252Fuploads%252Fgit-blob-8d2af51634cf1439ad20c5ea7599ff0daa771856%252Fauto-relayer.png%3Falt=media&width=768&dpr=4&quality=100&sign=9ec5273e8086e45951acfa689f1807e4557df9c1a098b3fe4f367544ae93a4d0)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/39b89f2e-3564-4ccb-b520-205ba51140d1/1fbed4d1-2075-4e63-b7c2-654f5cf19ef5/Untitled.png)
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/39b89f2e-3564-4ccb-b520-205ba51140d1/4c3dba36-be3b-416f-a6f1-4f876056092a/Untitled.png)
+  - Specialized Relayer
+![Specialized Relayer](https://docs.wormhole.com/~gitbook/image?url=https:%2F%2F2048606572-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MkD9YTtNUKJxtD9pDF-%252Fuploads%252Fgit-blob-2015dac4587e484be7e74efe25c34c4b75f568f2%252Fspecialized-relayer.png%3Falt=media&width=768&dpr=4&quality=100&sign=dc445b670e288e1a7823f096a40fc2d069babd8632bf089aa5937985adb27177)
 
 # Uniswap v2 vs. v3
 
-| V2 | V3 |
-| --- | --- |
-| Multiple Fee Tiers |  |
-| Uniform Liquidity | Concentrated Liquidity |
-| Uniswap V2 uses a constant product formula, which means liquidity providers provide equal value of both tokens in a liquidity pool. This leads to uniform liquidity across the price range, but it can be inefficient for assets with varying price ranges | Uniswap V3 introduces the concept of concentrated liquidity. Liquidity providers in V3 can specify price ranges where they want to provide liquidity, allowing for more efficient capital utilization. This enables liquidity providers to focus their assets within specific price ranges where they anticipate more trading activity |
-| Formula |  |
-| Uniswap V2 had a fixed fee of 0.30% for all trades | Uniswap V3 allows liquidity providers to choose from multiple fee tiers (ranging from 0.05% to 1%) when providing liquidity to a pool. This flexibility allows LPs to optimize their earnings based on their risk tolerance and market conditions |
-| Constant product formula: token_a_pool_size * token_b_pool_size = constant_product
-x*y=k
+| | V2 | V3 |
+| --- | --- | --- |
+| Multiple Fee Tiers |  |  |
+| | Uniform Liquidity | Concentrated Liquidity |
+| | Uniswap V2 uses a constant product formula, which means liquidity providers provide equal value of both tokens in a liquidity pool. This leads to uniform liquidity across the price range, but it can be inefficient for assets with varying price ranges | Uniswap V3 introduces the concept of concentrated liquidity. Liquidity providers in V3 can specify price ranges where they want to provide liquidity, allowing for more efficient capital utilization. This enables liquidity providers to focus their assets within specific price ranges where they anticipate more trading activity |
+|  | Uniswap V2 had a fixed fee of 0.30% for all trades | Uniswap V3 allows liquidity providers to choose from multiple fee tiers (ranging from 0.05% to 1%) when providing liquidity to a pool. This flexibility allows LPs to optimize their earnings based on their risk tolerance and market conditions |
+| Formula |  |  |
+|  | [Uniswap V2 formular](#uniswap-v2-formular) | https://atise.medium.com/uniswap-v3-liquidity-formula-explained-de8bd42afc3c |
+| Management of Impermanent Loss |  |  |
+|  | Impermanent loss is a risk faced by liquidity providers when the price of assets in a pool changes. | Uniswap V3's concentrated liquidity model can allow LPs to better manage and mitigate impermanent loss by focusing on specific price ranges |
 
-Starting pool for both examples
+
+### Uniswap V2 formular
+
+Constant product formula: token_a_pool_size * token_b_pool_size = constant_product Starting pool for both examples
 
 Pool info:
 USDT = 1,000,000
@@ -198,9 +198,8 @@ ETH recieved = 1,000 ETH - 990,09 ETH = 9.9 ETH (old eth amount - new eth amount
 
 Price paid per ETH = Difference in USDT / Difference in ETH ≈ 10,000 / 9.9 ≈ 1,010.101 USDT
 
-Price impact = (1,010.101 - 1,000) / 1000 * 100 = 1.0101%  | https://atise.medium.com/uniswap-v3-liquidity-formula-explained-de8bd42afc3c |
-| Management of Impermanent Loss |  |
-| Impermanent loss is a risk faced by liquidity providers when the price of assets in a pool changes. | Uniswap V3's concentrated liquidity model can allow LPs to better manage and mitigate impermanent loss by focusing on specific price ranges |
+Price impact = (1,010.101 - 1,000) / 1000 * 100 = 1.0101% 
+
 
 # DAO
 
@@ -230,10 +229,10 @@ Price impact = (1,010.101 - 1,000) / 1000 * 100 = 1.0101%  | https://atise.mediu
 
 # Upgradeable smart contract
 
-- `[Proxy](https://docs.openzeppelin.com/contracts/4.x/api/proxy#Proxy)`: Abstract contract implementing the core delegation functionality.
+- [`Proxy`](https://docs.openzeppelin.com/contracts/4.x/api/proxy#Proxy): Abstract contract implementing the core delegation functionality.
 - [`EIP1967`](https://eips.ethereum.org/EIPS/eip-1967):  Store the storage slot address
-    - `[ERC1967Upgrade](https://docs.openzeppelin.com/contracts/4.x/api/proxy#ERC1967Upgrade)`: Internal functions to get and set the storage slots defined in EIP1967.
-    - `[ERC1967Proxy](https://docs.openzeppelin.com/contracts/4.x/api/proxy#ERC1967Proxy)`: A proxy using EIP1967 storage slots. Not upgradeable by default.
+    - [`ERC1967Upgrade`](https://docs.openzeppelin.com/contracts/4.x/api/proxy#ERC1967Upgrade): Internal functions to get and set the storage slots defined in EIP1967.
+    - [`ERC1967Proxy`](https://docs.openzeppelin.com/contracts/4.x/api/proxy#ERC1967Proxy): A proxy using EIP1967 storage slots. Not upgradeable by default.
 
 ### TransparencyUpgradeableProxy
 
@@ -241,10 +240,7 @@ Price impact = (1,010.101 - 1,000) / 1000 * 100 = 1.0101%  | https://atise.mediu
 2. A ProxyAdmin to be the admin of the proxy
 3. A proxy to the implementation contract, which is the contract that you actually interact with
 
-<aside>
-💡 A *delegate call* is similar to a regular call, except that all code is executed in the context of the caller, not of the callee
-
-</aside>
+> 💡 A **delegate call** is similar to a regular call, except that all code is executed in the context of the caller, not of the callee
 
 - The proxy contract bytecode includes the implementation contract bytecode
 - The proxy contract save the address of the slot where the data is saved in
