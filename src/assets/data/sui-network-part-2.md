@@ -1,5 +1,9 @@
 # Deep Dive Into SUI Blockchain. What is SUI?
 
+> ❕❕❕ Why is Sui network TPS so high?
+
+> ❕❕❕ Damnnn, developing on Sui blockchain is so smooth and fast!
+
 ### A Brief Overview of SUI Network
 
 The Sui network is a Layer-1 blockchain network, launched its mainnet on 03/05/2023 and has its own native token called $SUI. The main purpose of Sui is to build a blockchain platform with low latency, low cost - very practical and convenient for GameFi projects, dApps, etc.
@@ -30,7 +34,7 @@ The Sui network with 100 validators worldwide achieves the highest throughput ra
 The time for Sui to complete a transaction is about ~480 milliseconds (0.48 seconds)
 Note: Before Sui, there was Solana with 710,000 TPS. However, since this is about Sui's spotlight, Solana will not be mentioned in this post 😀.
 
-### CƠ CHẾ HOẠT ĐỘNG CỦA SUI NETWORK
+### HOW DOES SUI WORK?
 In overview, the consensus mechanism of the Sui network is Delegated Proof of Stake (DPoS) combined with Mempool & Consensus Engines called Narwhal and Bullshark. This means it divides the transaction processing process into 2 parts:
 
 - Narwhal: Ensures the integrity of data sent to the system, orders the transaction in mempool _(aka. global transaction queue)_.

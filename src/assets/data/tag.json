@@ -1,5 +1,4 @@
 [
-  "blockchain",
   "ethereum",
   "transaction",
   "merkle-tree",
@@ -9,5 +8,9 @@
   "solana",
   "public-key",
   "wallet",
-  "sui-network"
+  "sui-network",
+  "sniper",
+  "nft-marketplace",
+  "bounty",
+  "deep-dive"
 ]
