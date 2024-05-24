@@ -1,14 +1,25 @@
 [
   {
+    "code": "sui-network-part-2",
+    "title": "Deep dive into Sui network",
+    "description": "What is SUI network, and what is it for? Let's find out more.",
+    "content": "sui-network-part-2.md",
+    "timestamp": 1708362000000,
+    "tag": [
+      "deep-dive-into-sui",
+      "what-is-sui-blockchain",
+      "sui-network"
+    ]
+  },
+  {
     "code": "sui-network-part-1",
-    "title": "Sui network #1 - What was happened with $SUI?",
+    "title": "Sui network #1 - What was happened with SUI?",
     "description": "In 2023 $SUI had it own ATH is $1.4. However it had dumped to $0.37. Not at all, it was completely back to ATH. WTF is going on with $SUI?. Let's find out!!!!",
     "content": "sui-network-part-1.md",
     "timestamp": 1704289190481,
     "tag": [
       "sui-network",
-      "sui-token",
-      "$sui"
+      "sui-drama"
     ]
   },
   {
@@ -19,7 +30,7 @@
     "timestamp": 1704289190481,
     "tag": [
       "solana",
-      "address",
+      "public-key",
       "wallet"
     ]
   },
@@ -30,11 +41,10 @@
     "content": "merkle-tree-in-blockchain.md",
     "timestamp": 1700387524079,
     "tag": [
-      "blockchain",
       "merkle-tree",
-      "hash-functions",
+      "hash-function",
       "data-verification",
-      "gas-saving"
+      "gas-optimization"
     ]
   },
   {
@@ -45,7 +55,6 @@
     "timestamp": 1698570609359,
     "tag": [
       "decode",
-      "blockchain",
       "ethereum",
       "transaction"
     ]

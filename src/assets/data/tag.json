@@ -3,12 +3,11 @@
   "ethereum",
   "transaction",
   "merkle-tree",
-  "hash-functions",
+  "hash-function",
   "data-verification",
-  "gas-saving",
+  "gas-optimization",
   "solana",
-  "address",
+  "public-key",
   "wallet",
-  "sui-network",
-  "$sui"
+  "sui-network"
 ]

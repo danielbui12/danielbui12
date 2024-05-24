@@ -25,8 +25,8 @@ const WhoIAm = () => {
         A Blockchain Developer / Software Engineer
       </h5>
       <p className="mt-20 text-white-50">
-        Blockchain developer with more than 2 years of working experience in
-        Ethereum-based blockchain and Solana blockchain combined with 3 years in
+        Blockchain developer with approximately 3 years of working experience in
+        Ethereum, Solana, Polkadot, ... blockchain combined with 2 years in
         software development. My ambition is to offer customers high-quality
         software with the most convenient and good quality.
       </p>
@@ -40,7 +40,12 @@ const WhoIAm = () => {
       <h5 className="mb-3 text-light mt-5">
         Member of SuperTeam Vietnam
       </h5>
-      <img src='https://updg8.storage.googleapis.com/6cbb4b3f-bdd7-47a9-a438-c63d451a52ff' alt='superteam-membership-card' className='w-100' />
+      <a 
+        href='https://claim.underdogprotocol.com/nfts/BotnjoxTvoBd9vDVSk7Bpw4BzHJ5sT1CR83poCqMWLjx?network=MAINNET'
+        target='_blank' rel="noreferrer"
+      >
+        <img src='https://superteam-nft-generator.vercel.app/api/vietnam?name=Daniel&discord=danielbui12&xp=80' alt='superteam-membership-card' className='w-100' />
+      </a>
     </div>
   )
 }
@@ -52,7 +57,7 @@ const PersonalInfo = () => {
         Personal Info
       </h3>
       <p className="text-white-50">
-        Blockchain Developer | Blog Writer | Workaholic, Studious, Flexible
+        Blockchain Developer | Builder | Blog Writer
       </p>
       <span className="line mb-5" />
       <ul className="mt40 info list-unstyled">

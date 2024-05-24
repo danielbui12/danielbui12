@@ -18,14 +18,7 @@ function TechStack() {
                   <li>
                     Solidity, Chainlink, Truffle, Hardhat, Foundry, Moralis, Infura, etc;
                   </li>
-                  <li>
-                    Understanding PoW, PoS, PoH, PoA, EVM, Yield Farming, Liquid Staking;
-                  </li>
-                  <li>
-                    Experienced in Marketplace, Lottery, Lending-Renting NFT,
-                    Auction, etc;
-                  </li>
-                  <li>Solana, Rust, Anchor, cNFT, xNFT, Helius, etc</li>
+                  <li>Solana, Rust, Anchor, Metaplex, Helius, Shyft, etc</li>
                 </ul>
               </td>
             </tr>
