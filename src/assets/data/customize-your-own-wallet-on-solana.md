@@ -1,5 +1,5 @@
 <alert type="info">
-➡️ If you've ever used an Ethereum wallet, you might have found the address system a bit confusing¹. Ethereum addresses are 42 characters long, starting with '0x' and followed by 40 alphanumeric characters like **0x3D2...415**. This can be overwhelming, especially when you're dealing with multiple ERC20 tokens. But don't worry, Solana offers a more user-friendly approach.
+➡️ If you've ever used an Ethereum wallet, you might have found the address system a bit confusing. Ethereum addresses are 42 characters long, starting with '0x' and followed by 40 alphanumeric characters like **0x3D2...415**. This can be overwhelming, especially when you're dealing with multiple ERC20 tokens. But don't worry, Solana offers a more user-friendly approach.
 </alert>
 
 ## Creating a Solana Wallet

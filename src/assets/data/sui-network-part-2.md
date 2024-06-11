@@ -1,8 +1,9 @@
 # Deep Dive Into SUI Blockchain. What is SUI?
 
 
-
 > ❕❕❕ Why is Sui network TPS so high?
+
+
 > ❕❕❕ Damnnn, developing on Sui blockchain is so smooth and fast!
 
 

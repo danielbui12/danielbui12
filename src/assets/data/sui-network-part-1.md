@@ -2,7 +2,9 @@
 
 > ❕❕❕ Sui network is a f**king scam project.
 
+
 > ❕❕❕ $SUI pulling back to $0.3 is a gift from god!
+
 
 > ❕❕❕ $SUI will reach $10 $20 soon!
 
