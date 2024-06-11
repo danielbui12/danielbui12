@@ -1,5 +1,5 @@
 
-<alert type="primary">
+<alert type="info">
 ‼ Full documentation about Wormhole is <a href="https://medium.com/@huytung139/wormhole-unlocking-the-immense-possibilities-f987e6f7ea47">this blog</a>.
 </alert>
 
