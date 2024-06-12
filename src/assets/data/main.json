@@ -60,11 +60,23 @@
       "gas-optimization"
     ]
   },
+    {
+        "code": "how-to-decode-ethereum-transaction-part-2",
+        "title": "How to decode Ethereum transaction #2",
+        "description": "Continuing decode Ethereum transaction series, you'll know how to decode an Ethereum transaction in many ways.",
+        "content": "how-to-decode-ethereum-transaction-part-2.md",
+        "timestamp": 1698570610359,
+        "tag": [
+            "decode",
+            "ethereum",
+            "transaction"
+        ]
+    },
   {
     "code": "how-to-decode-ethereum-transaction-part-1",
     "title": "How to decode Ethereum transaction #1",
     "description": "By the end of this post, you'll know how to decode an Ethereum transaction in many ways.",
-    "content": "how-to-decode-ethereum-transaction.md",
+    "content": "how-to-decode-ethereum-transaction-part-1.md",
     "timestamp": 1698570609359,
     "tag": [
       "decode",
