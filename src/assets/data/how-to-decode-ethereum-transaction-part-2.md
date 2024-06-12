@@ -101,6 +101,21 @@ async function getPastEvents() {
 getPastEvents().catch(console.error);
 ```
 
+### Step-by-Step Explanation
+
+1. **Connecting to an Ethereum Node**: We first create a provider to connect to an Ethereum node. Replace `'YOUR_RPC_URL'` with the URL of your Ethereum node provider (e.g., Infura, Alchemy).
+
+2. **Creating a Contract Instance**: We create a contract instance by providing the contract's address and ABI. This instance allows us to interact with the smart contract on the blockchain.
+
+3. **Setting Up an Event Filter**: We set up an event filter to capture specific events emitted by the contract. In this case, we're interested in `Transfer` events of an ERC-20 contract.
+
+4. **Querying Past Events**: Using the `queryFilter` method, we fetch past events that match our filter criteria. We specify a block range to limit our query to a specific range of blocks. The retrieved events are then processed and logged to the console.
+
+
+<alert type="warning">
+👨‍💻 Let's run and see how it works
+</alert>
+
 
 - Let's run code and see the result
 
@@ -145,19 +160,82 @@ Transfer from 0xECa33dc9E896072d4EdC4A02183910376D4B5E76 to 0x771A8DEdBf5758CB14
 ....
 ```
 
-- For more detail, you can direct to <a href="https://docs.ethers.org/v5/concepts/events/">this document</a> 
+- Great, we got 'em 💪💪‼️
 
-### Step-by-Step Explanation
+- If you want to know more about the `queryFilter` method, you can check it out at <a href="https://docs.ethers.org/v5/concepts/events/">this document</a> 
 
-1. **Connecting to an Ethereum Node**: We first create a provider to connect to an Ethereum node. Replace `'YOUR_RPC_URL'` with the URL of your Ethereum node provider (e.g., Infura, Alchemy).
+- Full code of the example:
+```javascript
+const { ethers } = require('ethers');
 
-2. **Creating a Contract Instance**: We create a contract instance by providing the contract's address and ABI. This instance allows us to interact with the smart contract on the blockchain.
+// Connect to an Ethereum node
+const provider = new ethers.providers.JsonRpcProvider(
+  'https://mainnet.infura.io/v3/b8e2e5d61a5440a7aaf9fc1f533c05b4',
+);
 
-3. **Setting Up an Event Filter**: We set up an event filter to capture specific events emitted by the contract. In this case, we're interested in `Transfer` events of an ERC-20 contract.
+// Because in this tutorial, we are filtering for `Transfer` events only.
+const contractABI = [
+  {
+    anonymous: false,
+    inputs: [
+      {
+        indexed: true,
+        name: 'from',
+        type: 'address',
+      },
+      {
+        indexed: true,
+        name: 'to',
+        type: 'address',
+      },
+      {
+        indexed: false,
+        name: 'value',
+        type: 'uint256',
+      },
+    ],
+    name: 'Transfer',
+    type: 'event',
+  },
+];
+// checksum address
+const contractAddress = ethers.utils.getAddress(
+  '0xdac17f958d2ee523a2206206994597c13d831ec7',
+);
 
-4. **Querying Past Events**: Using the `queryFilter` method, we fetch past events that match our filter criteria. We specify a block range to limit our query to a specific range of blocks. The retrieved events are then processed and logged to the console.
+// Create a contract instance
+const contract = new ethers.Contract(contractAddress, contractABI, provider);
 
-### 4. Conclusion
+const filter = {
+  address: contractAddress,
+  topics: [contract.interface.getEventTopic('Transfer')],
+};
+
+async function getPastEvents() {
+  // Define block range (optional)
+  const toBlock = await provider.getBlockNumber();
+  const fromBlock = toBlock - 50; // just filter a short range to get the result faster
+
+  // Query past events
+  const events = await contract.queryFilter(filter, fromBlock, toBlock);
+  console.log(events);
+
+  // Process and log the events
+  events.forEach((event) => {
+    console.log(
+      `Transfer from ${event.args.from} to ${
+        event.args.to
+      } of ${event.args.value.toString()}`,
+    );
+  });
+}
+
+getPastEvents().catch(console.error);
+```
+
+
+
+### Conclusion
 In this part of the series, we learned how to create a smart contract instance using `ethers.js` and set up an event filter to query past events. This approach is invaluable for monitoring and reacting to specific events in a decentralized application.
 
 Stay tuned for the part #3, where we will explore real-time event monitoring and handling just by eyes 👨‍💻!
