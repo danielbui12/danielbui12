@@ -1,5 +1,17 @@
 [
     {
+        "code": "polkadot-2.0-enhances-blockchain-scalability-and-interoperability",
+        "title": "Polkadot 2.0 Enhances Blockchain Scalability and Interoperability",
+        "description": "Polkadot solve interoperability and scalability issues to reach their potential at version 2.0",
+        "content": "polkadot-2.0-enhances-blockchain-scalability-and-interoperability.md",
+        "timestamp": 1718519113376,
+        "tag": [
+            "adoption",
+            "scalability",
+            "polkadot"
+        ]
+    },
+    {
         "code": "unlocking-the-immense-possibilities-of-wormhole",
         "title": "Wormhole: Unlocking the Immense Possibilities",
         "description": "What is a Wormhole? Potential Applications and Challenges",
@@ -21,7 +33,7 @@
     "tag": [
       "deep-dive-into-sui",
       "what-is-sui-blockchain",
-      "sui-network"
+      "sui"
     ]
   },
   {
@@ -31,7 +43,7 @@
     "content": "sui-network-part-1.md",
     "timestamp": 1704289190481,
     "tag": [
-      "sui-network",
+      "sui",
       "sui-drama"
     ]
   },

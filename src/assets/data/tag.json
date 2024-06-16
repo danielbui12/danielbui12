@@ -2,15 +2,11 @@
   "ethereum",
   "transaction",
   "merkle-tree",
-  "hash-function",
-  "data-verification",
   "gas-optimization",
   "solana",
-  "public-key",
   "wallet",
-  "sui-network",
-  "sniper",
-  "nft-marketplace",
+  "sui",
   "bounty",
-  "deep-dive"
+  "deep-dive",
+  "polkadot"
 ]
