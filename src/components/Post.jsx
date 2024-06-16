@@ -25,7 +25,7 @@ const Post = () => {
         .then(response => setPostContent(response))
         .catch(err => console.log(err))
     }
-    // import("../assets/data/customize-your-own-wallet-on-solana.md")
+    // import("../assets/data/polkadot-2.0-enhances-blockchain-scalability-and-interoperability.md")
     //   .then(res => {
     //     fetch(res.default)
     //       .then(response => response.text())
@@ -62,6 +62,18 @@ const Post = () => {
       }
     }
   };
+
+  useEffect(() => {
+      if (window.location.hash) {
+        const el = document.getElementById(window.location.hash.slice(1))
+        if (!el) return;
+
+        window.scrollTo({
+            top: el.offsetTop,
+            behavior: 'smooth'
+        })
+      }
+  }, [])
 
   return (
     <DocumentMeta  {...meta}>

@@ -1,12 +1,12 @@
 ### Table of Contents
 
-- <a href="#Polkadot-Overview">Polkadot Overview</a>
-- <a href="#Polkadot-2.0-Definition">Polkadot 2.0 Definition</a>
-- <a href="#Asynchronous-Backing" style="padding-left: 12px;">Asynchronous-Backing</a>
-- <a href="#Agile-Coretime" style="padding-left: 12px;">Agile Coretime</a>
-- <a href="#Elastic-Scaling" style="padding-left: 12px;">Elastic Scaling</a>
-- <a href="#Opportunities-and-challenges">Opportunities and Challenges</a>
-- <a href="#References">References</a>
+- <a href="#polkadot-overview">Polkadot Overview</a>
+- <a href="#polkadot-2.0-definition">Polkadot 2.0 Definition</a>
+- <a href="#asynchronous-backing" style="padding-left: 12px;">Asynchronous-Backing</a>
+- <a href="#agile-coretime" style="padding-left: 12px;">Agile Coretime</a>
+- <a href="#elastic-scaling" style="padding-left: 12px;">Elastic Scaling</a>
+- <a href="#opportunities-and-challenges">Opportunities and Challenges</a>
+- <a href="#references">References</a>
 
 <alert type="info">
 At 8th May '24, 3:33 pm, Alice und Bob had submitted a <a href="https://polkadot.polkassembly.io/referenda/747" target="_blank">proposal</a> about Polkadot 2.0 definition. The proposal was accepted by the community.
@@ -23,9 +23,9 @@ What are the key features?
 
 ## Polkadot Overview
 
-Polkadot is a foundational Layer 0 solution specifically designed to address blockchain interoperability, providing developers with a robust platform for creating applications and blockchains. Its architecture features a primary Relay Chain responsible for the network’s security, consensus, and interoperability, alongside numerous parallelized chains that run parallel to the Relay Chain (aka. [parachains](#ref-Definition-of-a-Parachain)).
+Polkadot is a foundational Layer 0 solution specifically designed to address blockchain interoperability, providing developers with a robust platform for creating applications and blockchains. Its architecture features a primary Relay Chain responsible for the network’s security, consensus, and interoperability, alongside numerous parallelized chains that run parallel to the Relay Chain (aka. [parachains](#ref-definition-of-a-parachain)).
 
-Parachains are built using the [Substrate](#ref-Substrate-and-Polkadot) framework, which provides the foundational building blocks for creating customized blockchains without need for developing consensus algorithms. Parachains can communicate with each other and the central Relay Chain using Cross-Consensus Messaging (XCM), allowing them to exchange information and transactions seamlessly. This architecture not only leverages the shared security model of Polkadot but also enables diverse applications to interoperate within a unified ecosystem.
+Parachains are built using the [Substrate](#ref-substrate-and-polkadot) framework, which provides the foundational building blocks for creating customized blockchains without need for developing consensus algorithms. Parachains can communicate with each other and the central Relay Chain using Cross-Consensus Messaging (XCM), allowing them to exchange information and transactions seamlessly. This architecture not only leverages the shared security model of Polkadot but also enables diverse applications to interoperate within a unified ecosystem.
 
 
 ![parachain-overview](https://wiki.polkadot.network/assets/images/one-parachain-f8e0673144a718bd67834cdd69894ca2.png)
@@ -44,7 +44,7 @@ Upgrade status:
 
 ### Asynchronous Backing
 
-[Asynchronous Backing](#ref-Asynchronous-Backing) enhances the throughput and efficiency of Polkadot parachains by allowing collators to build blocks on older Relay Chain blocks, creating pipelines of multiple pending blocks. This separation improves performance by up to 10x when combined with Proof-of-Validity (PoV) reclaim, enabling parachains to produce blocks every six seconds instead of twelve seconds, with blocks four times larger.
+[Asynchronous Backing](#ref-asynchronous-backing) enhances the throughput and efficiency of Polkadot parachains by allowing collators to build blocks on older Relay Chain blocks, creating pipelines of multiple pending blocks. This separation improves performance by up to 10x when combined with Proof-of-Validity (PoV) reclaim, enabling parachains to produce blocks every six seconds instead of twelve seconds, with blocks four times larger.
 
 Benefits:
 - Higher Transaction Volume: Supports high-throughput parachains like gaming platforms ⏫.
@@ -57,7 +57,7 @@ In asynchronous backing, parablocks (P) are included every 6 seconds, and backin
 
 ### AGILE CORETIME
 
-[Agile Coretime](#ref-Agile-Coretime) introduces flexible and dynamic resource management by allocating coretime on a lease basis, eliminating the need for long-term slot auctions. Coretime can be purchased on-demand or in bulk up to 28 days in advance, with secondary markets allowing for resale of unused coretime.
+[Agile Coretime](#ref-agile-coretime) introduces flexible and dynamic resource management by allocating coretime on a lease basis, eliminating the need for long-term slot auctions. Coretime can be purchased on-demand or in bulk up to 28 days in advance, with secondary markets allowing for resale of unused coretime.
 
 Benefits:
 - Reduced Entry Barriers: Easier for new projects to onboard onto Polkadot 🔋.
@@ -84,7 +84,7 @@ Polkadot sets itself apart from other blockchain networks by working with the Se
 
 ### ELASTIC SCALING
 
-[Elastic Scaling](#ref-Elastic-Scaling) allows parachains to consume more than one core if they require additional resources, supporting scalability by enabling parachains to increase resource usage to handle growing demands.
+[Elastic Scaling](#ref-elastic-scaling) allows parachains to consume more than one core if they require additional resources, supporting scalability by enabling parachains to increase resource usage to handle growing demands.
 
 Benefits:
 - Scalability: Parachains can expand as needed without compromising performance ⚙️. 
@@ -103,14 +103,16 @@ Revenue from coretime sales will be transferred to the Polkadot Treasury, where 
 
 As Polkadot continues to develop, its success in leveraging its unique capabilities and overcoming its challenges will play a crucial role in defining its position within the broader blockchain ecosystem. Polkadot's progress reflects the overall growth and maturation of blockchain technology, demonstrating the potential to create a decentralized and interoperable future.
 
-> Unveiling Polkadot 3.0 - Join-Accumulate Machine (JAM) allows for parallel execution and introduces a novel block production algorithm, SAFROLE, emphasizing simplicity and security. See more [JAM gray paper](#ref-JAM-Gray-Paper).
+<alert type="secondary">
+📠 Unveiling Polkadot 3.0 - Join-Accumulate Machine (JAM) allows for parallel execution and introduces a novel block production algorithm, SAFROLE, emphasizing simplicity and security. See more at [JAM gray paper](#ref-JAM-Gray-Paper).
+</alert>
 
 ## References
 
-- <a href="https://polkadot.polkassembly.io/referenda/747" target="_blank" id="ref-Polkadot-2.0-Definition">747 Polkadot 2.0 Definition</a>
-- <a href="https://wiki.polkadot.network/docs/learn-parachains" target="_blank" id="ref-Definition-of-a-Parachain">Definition of a Parachain</a>
-- <a href="https://substrate.io/vision/substrate-and-polkadot/" target="_blank" id="ref-Substrate-and-Polkadot">Substrate and Polkadot</a>
+- <a href="https://polkadot.polkassembly.io/referenda/747" target="_blank" id="ref-polkadot-2.0-definition">Proposal 747 Polkadot 2.0 Definition</a>
+- <a href="https://wiki.polkadot.network/docs/learn-parachains" target="_blank" id="ref-definition-of-a-parachain">Definition of a Parachain</a>
+- <a href="https://substrate.io/vision/substrate-and-polkadot/" target="_blank" id="ref-substrate-and-polkadot">Substrate and Polkadot</a>
 - <a href="https://wiki.polkadot.network/docs/learn-async-backing" target="_blank" id="ref-Asynchronous-Backing">Asynchronous Backing</a>
-- <a href="https://wiki.polkadot.network/docs/learn-agile-coretime" target="_blank" id="ref-Agile-Coretime">Agile Coretime</a></a>
-- <a href="https://polkadot.network/blog/elastic-scaling-streamling-growth-on-polkadot" target="_blank" id="ref-Elastic-Scaling">Elastic Scaling</a></a>
-- <a href="https://graypaper.com/" target="_blank" id="ref-JAM-Gray-Paper">JAM Gray Paper</a></a>
+- <a href="https://wiki.polkadot.network/docs/learn-agile-coretime" target="_blank" id="ref-agile-coretime">Agile Coretime</a>
+- <a href="https://polkadot.network/blog/elastic-scaling-streamling-growth-on-polkadot" target="_blank" id="ref-elastic-scaling">Elastic Scaling</a>
+- <a href="https://graypaper.com/" target="_blank" id="ref-JAM-Gray-Paper">JAM Gray Paper</a>
