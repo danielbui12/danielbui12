@@ -27,9 +27,11 @@ Polkadot is a foundational Layer 0 solution specifically designed to address blo
 
 Parachains are built using the [Substrate](#ref-substrate-and-polkadot) framework, which provides the foundational building blocks for creating customized blockchains without need for developing consensus algorithms. Parachains can communicate with each other and the central Relay Chain using Cross-Consensus Messaging (XCM), allowing them to exchange information and transactions seamlessly. This architecture not only leverages the shared security model of Polkadot but also enables diverse applications to interoperate within a unified ecosystem.
 
+Otherwise, with Substrate, developers can create their own Solo Chain without co-existing in Polkadot Relayer.
+
+Moreover, with FRAME (the framework used to build Substrate-based application logic, aka. runtimes aka. pallet), you can build your own customized pallet which suit the needs of your blockchain.
 
 ![parachain-overview](https://wiki.polkadot.network/assets/images/one-parachain-f8e0673144a718bd67834cdd69894ca2.png)
-
 
 ## Polkadot 2.0 Definition
 
