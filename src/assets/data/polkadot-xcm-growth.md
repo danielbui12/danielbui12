@@ -1,3 +1,6 @@
+![xcm is growing up](https://miro.medium.com/v2/resize:fit:1062/format:webp/1*-Lnb1LRu9KU33HlH17b3jg.png)
+
+
 ### Table of Contents
 
 - [What is XCM?](#what-is-xcm?)
@@ -5,7 +8,7 @@
     - [XCM Transport Methods](#xcm-transport-methods)
     - [XCM Virtual Machine](#xcm-virtual-machine)
 - [Use cases](#use-cases)
-- [XCM Upgrade](#xcm-upgrade)
+- [XCM Upgrades](#xcm-upgrades)
     - [XCM V3](#xcm-v3)
     - [XCM V4 Coming Soon](#xcm-v4-coming-soon)
 
@@ -87,7 +90,7 @@ Here’s how it works:
 
 ![XCM Use-Cases](https://github.com/danielbui12/danielbui12/assets/79790753/10505085-866a-4350-a2e6-640b67ad36d6)
 
-## XCM Upgrade
+## XCM Upgrades
 
 ### XCM V3
 
@@ -117,7 +120,3 @@ According to [Gavin Wood, at Polkadot Decoded 2022](https://youtu.be/K2c6xrCoQOU
 - [Polkadot Wiki - XCM](https://wiki.polkadot.network/docs/learn-xcm)
 - [XCM v3 | Polkadot Deep dive](https://www.youtube.com/watch?v=MMIPNR3SuB4)
 - [Gavin Wood, Polkadot founder: XCM v3 | Polkadot Decoded 2022](https://youtu.be/K2c6xrCoQOU?t=1920)
-
-
-
-![xcm is growing up](https://miro.medium.com/v2/resize:fit:1062/format:webp/1*-Lnb1LRu9KU33HlH17b3jg.png)
