@@ -11,6 +11,8 @@
 - [XCM Enhancements](#xcm-enhancements)
     - [XCM V3](#xcm-v3)
     - [XCM V4 Coming Soon](#xcm-v4-coming-soon)
+- [Conclusion](#conclusion)
+- [Reference](#reference)
 
 ## What is XCM?
 
@@ -120,14 +122,30 @@ The key is to create a common good parachain for each function (governance, stak
 According to [Gavin Wood, at Polkadot Decoded 2022](https://youtu.be/K2c6xrCoQOU?t=1920), it is noted that XCM V4 is in development and addresses issues such as:
 
 - Dynamic fee discovery
+- Dynamic message routing
 - Checkpoints
 - Instant version negotiation
 - Smart contracts
 
+
+## Conclusion
+
+In summary, the advancements in Polkadot's Cross-Chain Messaging (XCM) have notably enhanced the ecosystem. The launch of XCM V3 has improved both the security and interoperability of the Polkadot Relay Chain.
+
+The importance of XCM within Polkadot cannot be overstated. It is a crucial element that enables decentralized interoperability among multiple blockchains, supporting cross-chain communication, governance, and asset transfers. The ongoing development of XCM highlights the Polkadot community's commitment to maintaining a leading position in technological progress within the cryptocurrency field.
+
+However, while asset transfers and direct messaging are among XCM's innovations, they involve a third party. To address this, a new tool called SPREE is required, which will be explored in future discussions.
 
 ## Reference
 
 - [Polkadot Wiki - XCM](https://wiki.polkadot.network/docs/learn-xcm)
 - [XCM v3 | Polkadot Deep dive](https://www.youtube.com/watch?v=MMIPNR3SuB4)
 - [Gavin Wood, Polkadot founder: XCM v3 | Polkadot Decoded 2022](https://youtu.be/K2c6xrCoQOU?t=1920)
-- [XCM v3: Breaking New Ground for Web3 Interoperability](https://polkadot.network/blog/xcm-v3-breaking-new-ground-for-web3-interoperability)
+
+
+## Read more
+
+- [How XCM v3 enhances Bifrost protocol](https://docs.bifrost.io/builders/liquid-staking-slp/xcm-v3-in-bifrost)
+- [Remote EVM calls through XCM on Moonbeam](https://docs.moonbeam.network/builders/interoperability/xcm/remote-execution/remote-evm-calls/)
+
+
