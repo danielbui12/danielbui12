@@ -16,7 +16,7 @@
 
 ### Definition
 
-XCM (Cross-Chain Messaging) is a crucial component of the Polkadot ecosystem, enabling seamless communication and interoperability between parachains. It's the set of rules messages or the "parachain native language" spoken between different channels.
+XCM (Cross-Chain Messaging) is a crucial component of the Polkadot ecosystem, enabling seamless communication and interoperability between parachains. It's the set of rules messages or the "common language" spoken between different channels.
 
 <alert type="secondary">
 ⚠️ XCM is just a language, not a protocol that responsible for transporting messages.
@@ -92,6 +92,8 @@ Here’s how it works:
 
 ## XCM Upgrades
 
+From DEC 2020 to 2022
+
 ### XCM V3
 
 The XCM V3 has improved the protocol that facilitates he splitting of applications across different sharded protocols, parachains, and more.
@@ -104,6 +106,8 @@ The XCM V3 has improved the protocol that facilitates he splitting of applicatio
 The goal of XCM V3 is to decompose the Polkadot Relay Chain into “system chains functionally” — with the primary functions of the Relay Chain to provide security and interoperability.
 
 The key is to create a common good parachain for each function (governance, staking, auctions, assets). This is the competitive advantage of the Polkadot architecture over other ecosystems.
+
+![xcm-v3](https://pbs.twimg.com/media/GQbWnHiaIAAPFjL?format=jpg&name=4096x4096)
 
 ### XCM V4 Coming Soon
 
@@ -120,3 +124,4 @@ According to [Gavin Wood, at Polkadot Decoded 2022](https://youtu.be/K2c6xrCoQOU
 - [Polkadot Wiki - XCM](https://wiki.polkadot.network/docs/learn-xcm)
 - [XCM v3 | Polkadot Deep dive](https://www.youtube.com/watch?v=MMIPNR3SuB4)
 - [Gavin Wood, Polkadot founder: XCM v3 | Polkadot Decoded 2022](https://youtu.be/K2c6xrCoQOU?t=1920)
+- [XCM v3: Breaking New Ground for Web3 Interoperability](https://polkadot.network/blog/xcm-v3-breaking-new-ground-for-web3-interoperability)
