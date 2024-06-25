@@ -1,5 +1,15 @@
 [
     {
+        "code": "polkadot-xcm-growth",
+        "title": "Explosive Growth of Polkadot XCM",
+        "description": "Polkadot XCM has grown exponentially in the last few years.",
+        "content": "polkadot-xcm-growth.md",
+        "timestamp": 1719288926129,
+        "tag": [
+            "cross-consensus", "polkadot", "XCM", "XCMP", "interoperability", "communication"
+        ]
+    },
+    {
         "code": "polkadot-2.0-enhances-blockchain-scalability-and-interoperability",
         "title": "Polkadot 2.0 Enhances Blockchain Scalability and Interoperability",
         "description": "Polkadot solve interoperability and scalability issues to reach their potential at version 2.0",
