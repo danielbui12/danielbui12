@@ -1,5 +1,8 @@
 ![xcm is growing up](https://miro.medium.com/v2/resize:fit:1062/format:webp/1*-Lnb1LRu9KU33HlH17b3jg.png)
 
+<alert type="info">
+The XCM has undergone significant enhancements. The first version of XCM - v0 was released in December 2020, and now with the latest version, XCM V3, focusing on the decomposition of the Polkadot Relay Chain into function-specific common good parachains. This advancement has fortified both security and interoperability, reinforcing Polkadot's competitive edge. As the community eagerly anticipates the release of XCM V4, which promises dynamic fee discovery and smart contract integration, it's clear that XCM's role in facilitating decentralized cross-chain communication is pivotal to the ongoing growth and innovation within the cryptocurrency landscape.
+</alert>
 
 ### Table of Contents
 
