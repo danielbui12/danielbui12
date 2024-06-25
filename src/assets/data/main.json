@@ -1,9 +1,9 @@
 [
     {
-        "code": "polkadot-xcm-growth",
+        "code": "enhancements-of-polkadot-xcm",
         "title": "Explosive Growth of Polkadot XCM",
         "description": "Polkadot XCM has grown exponentially in the last few years.",
-        "content": "polkadot-xcm-growth.md",
+        "content": "enhancements-of-polkadot-xcm.md",
         "timestamp": 1719288926129,
         "tag": [
             "cross-consensus", "polkadot", "XCM", "XCMP", "interoperability", "communication"
