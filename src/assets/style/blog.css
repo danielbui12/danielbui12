@@ -42,6 +42,11 @@ body {
   border-bottom: 3px solid var(--primary);
 }
 
+.article h3 {
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
+
 .article button.icon {
   background: none;
   outline: none;

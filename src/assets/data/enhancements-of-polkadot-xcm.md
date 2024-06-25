@@ -8,16 +8,13 @@
     - [XCM Transport Methods](#xcm-transport-methods)
     - [XCM Virtual Machine](#xcm-virtual-machine)
 - [Use cases](#use-cases)
-- [XCM Upgrades](#xcm-upgrades)
+- [XCM Enhancements](#xcm-enhancements)
     - [XCM V3](#xcm-v3)
     - [XCM V4 Coming Soon](#xcm-v4-coming-soon)
 
 ## What is XCM?
 
-<br />
-<br />
 ### Definition
-<br />
 
 XCM (Cross-Chain Messaging) is a crucial component of the Polkadot ecosystem, enabling seamless communication and interoperability between parachains. It's the set of rules messages or the "common language" spoken between different channels.
 
@@ -32,10 +29,7 @@ XCM's A-4 😎: 4 high-level core design principles which it stands to follow
 - **Asymmetric**: There is no direct confirmation that the message has been received.
 - **Agnostic**: Works without knowing or depending on the system it is sending to.
 
-<br />
-<br />
 ### XCM Transport Methods
-<br />
 
 There are three primary methods for message passing, one of which is under development:
 
@@ -102,14 +96,11 @@ With XCM, the possibilities for cross-chain functionality are expanded, enabling
 
 ![XCM Use-Cases](https://github.com/danielbui12/danielbui12/assets/79790753/10505085-866a-4350-a2e6-640b67ad36d6)
 
-## XCM Upgrades
+## XCM Enhancements
 
 From December 2020 to 2022, XCM has been updated and improved multiple times to increase its flexibility, diversity, and efficiency. This shows that Polkadot remains a state-of-the-art technology, with the foundation consistently focused on technological development.
 
-<br />
-<br />
 ### XCM V3
-<br />
 
 The XCM V3 has improved the protocol that facilitates he splitting of applications across different sharded protocols, parachains, and more.
 
@@ -124,10 +115,7 @@ The key is to create a common good parachain for each function (governance, stak
 
 ![xcm-v3](https://pbs.twimg.com/media/GQbWnHiaIAAPFjL?format=jpg&name=4096x4096)
 
-<br />
-<br />
 ### XCM V4 Coming Soon
-<br />
 
 According to [Gavin Wood, at Polkadot Decoded 2022](https://youtu.be/K2c6xrCoQOU?t=1920), it is noted that XCM V4 is in development and addresses issues such as:
 
