@@ -36,6 +36,8 @@ XCM's A-4 😎: 4 high-level core design principles which it stands to follow
 
 ### XCM Transport Methods
 
+While XCM is a format and a language for programming cross-chain applications, it is not a messaging protocol. XCM relies on transport protocols like HRMP, XCMP and VMP to exchange XCM messages from one system to another, plus external Bridges.
+
 There are three primary methods for message passing, one of which is under development:
 
 1. XCMP (Cross-Consensus Message Passing)
@@ -50,7 +52,7 @@ There are three primary methods for message passing, one of which is under devel
 XCMP is currently under development, and most of the cross-chain messages pass through HRMP channels for the time being.
 
 </alert>
-**[XCMP](https://wiki.polkadot.network/docs/learn-xcm-transport#xcmp-design)** allows secure communication between parachains. It comes in two forms: Direct and Relayed:
+**[XCMP](https://wiki.polkadot.network/docs/learn-xcm-transport#xcmp-design)** allows secure communication between parachains. It comes in two forms:
 
 - **Direct**: Message data is sent directly between parachains, making it highly scalable and O(1) on the Relay-chain side.
 - **Relayed**: Message data is routed through the Relay-chain and piggybacks on VMP, resulting in lower scalability. On-demand parachains may experience message delays due to queue growth.
@@ -141,7 +143,7 @@ However, while asset transfers and direct messaging are among XCM's innovations,
 
 ## Reference
 
-- [Polkadot Wiki - XCM](https://wiki.polkadot.network/docs/learn-xcm)
+- [Polkadot Wiki - XCM](https://wiki.polkadot.network/docs/learn-xcm-index)
 - [XCM v3 | Polkadot Deep dive](https://www.youtube.com/watch?v=MMIPNR3SuB4)
 - [Gavin Wood, Polkadot founder: XCM v3 | Polkadot Decoded 2022](https://youtu.be/K2c6xrCoQOU?t=1920)
 
