@@ -54,7 +54,7 @@ Vertical Messaging Passing là giao tiếp giữa Relay Chain và các parachain
 
 Cốt lõi của XCM là XCVM (Cross-Consensus Virtual Machine). Đây giống như một máy tính đặc biệt chỉ hiểu ngôn ngữ của XCM mỗi tin nhắn tương ứng với 1 XCVM. Nó tuân theo một tập hợp các quy tắc để đảm bảo rằng các tin nhắn được hiểu chính xác.
 
-Đây là cách nó hoạt động:
+Cách hoạt động:
 
 - **Tin nhắn**: Trong XCM, tin nhắn giống như các chương trình nhỏ gồm các lệnh. Những lệnh này cho XCVM biết phải làm gì, như chuyển tài sản từ blockchain này sang blockchain khác.
 

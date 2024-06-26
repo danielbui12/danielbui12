@@ -89,16 +89,20 @@ Here’s how it works:
 
 With XCM, the possibilities for cross-chain functionality are expanded, enabling a range of innovative applications and services:
 
-- Multi-Chain DApps: XCM enables dApps to interact with multiple blockchains for a seamless user experience.
-- Token Interoperability: XCM allows tokens to be transferred and traded across different blockchains.
 - Cross-Chain Governance: XCM facilitates decentralized governance across multiple blockchains.
-- Cross-Chain Data Exchange: XCM enables the transfer of data between different blockchains for decentralized data marketplaces.
+
 - Cross-Chain Identity Management: XCM supports the transfer of identity information between blockchains for decentralized identity systems.
+
 - Interconnected Smart Contracts: XCM allows smart contracts on different blockchains to interact and execute complex cross-chain logic.
+
 - Decentralized Finance (DeFi): XCM enhances DeFi applications by enabling asset and liquidity movement across blockchains.
+
 - Supply Chain Management: XCM can streamline supply chain processes by enabling cross-chain tracking and verification.
+
 - Gaming and NFTs: XCM allows for the transfer and interoperability of in-game assets and NFTs across different gaming platforms and blockchains.
+
 - Cross-Chain Oracles: XCM enables oracles to provide data feeds to multiple blockchains, enhancing the reliability and reach of decentralized applications.
+
 - And more!!
 
 ![XCM Use-Cases](https://github.com/danielbui12/danielbui12/assets/79790753/10505085-866a-4350-a2e6-640b67ad36d6)
